@@ -1,0 +1,60 @@
+// Copyright 2021 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+syntax = "proto3";
+
+package org.datacommons.proto;
+
+// StatMetadata contains the source and measurement information for a
+// statistical observation.
+message StatMetadata {
+  string import_name = 1;
+  string provenance_url = 2;
+  string measurement_method = 3;
+  string observation_period = 4;
+  string scaling_factor = 5;
+  string unit = 6;
+}
+
+// Represents a time series from a source.
+message Series {
+  // Map from date to stat value.
+  map<string, double> val = 1;
+  // Series metadata.
+  StatMetadata metadata = 2;
+}
+
+message SeriesMap {
+  // Key is stat var dcid.
+  map<string, Series> data = 1;
+}
+
+message GetStatAllResponse {
+  // Key is place dcid.
+  map<string, SeriesMap> place_data = 1;
+}
+
+// Request for GetStatSetSeries API.
+message GetStatSetSeriesRequest {
+  // The dcids of the place.
+  repeated string places = 1;
+  // The dcids of the statistical variables.
+  repeated string stat_vars = 2;
+}
+
+// Response of GetStatSetSeries
+message GetStatSetSeriesResponse {
+  // A map from place dcid to series map.
+  map<string, SeriesMap> data = 1;
+}

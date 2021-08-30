@@ -87,13 +87,16 @@ To build binary: `mvn package`
 - and you can run it with
 
   ```bash
-  java -jar server/target/datacommons-server-0.1-alpha.1.jar <file1.tmcf> <file2.csv>
+  java -jar server/target/datacommons-server-0.1-alpha.1.jar \
+  OurWorldInData_Covid19.csv \
+  OurWorldInData_Covid19.tmcf \
+  -b=datcom-mixer-autopush-resources
   ```
 
 Send a request:
 
 ```bash
-curl http://localhost:8080/stat/series?place=country/USA&statVar=<statVar>
+curl http://localhost:8080/stat/set/series/all?places=country/country/ALB&places=country/KWT&statVars=CumulativeCount_MedicalConditionIncident_COVID_19_ConfirmedCase&statVars=IncrementalCount_MedicalConditionIncident_COVID_19_PatientDeceased
 ```
 
 Then should see "Hello World!" in the console output.

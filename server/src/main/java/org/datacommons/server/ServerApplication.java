@@ -15,13 +15,18 @@
 package org.datacommons.server;
 
 import java.util.List;
+
+import org.datacommons.proto.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
 
 @SpringBootApplication
 @EnableAutoConfiguration
@@ -34,10 +39,16 @@ public class ServerApplication {
     SpringApplication.run(ServerApplication.class, args);
   }
 
-  @GetMapping("/stat/series")
-  public List<Observation> getStatSeries(
-      @RequestParam(value = "place") String place,
-      @RequestParam(value = "statVar") String statVar) {
-    return observationRepository.findObservationByPlaceAndStatVar(place, statVar);
+  @GetMapping("/stat/set/series/all")
+  public List<Api.GetStatSetSeriesResponse> getStatSeries(
+      @RequestParam(value = "places") String[] places,
+      @RequestParam(value = "statVars") String[] statVars) {
+    if (places.length == 0 || statVars.length == 0) {
+      return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
+    }
+
+    List<Observation> observations =
+      observationRepository.findObservationByPlaceAndStatVar(places, statVars);
+
   }
 }
