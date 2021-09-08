@@ -44,7 +44,8 @@ public class Processor {
       File tmcfFile,
       List<File> csvFiles,
       char delimiter,
-      ObservationRepository observationRepository)
+      ObservationRepository observationRepository,
+      Integer limit)
       throws IOException, InterruptedException {
     for (File csvFile : csvFiles) {
       TmcfCsvParser parser =
@@ -71,7 +72,7 @@ public class Processor {
               tvs = McfUtil.getPropTvs(node, Vocabulary.OBSERVATION_DATE);
               o.setObservationDate(tvs.get(0).getValue());
               tvs = McfUtil.getPropTvs(node, Vocabulary.VALUE);
-              o.setValue(tvs.get(0).getValue());
+              o.setValue(Double.parseDouble(tvs.get(0).getValue()));
               tvs = McfUtil.getPropTvs(node, Vocabulary.VARIABLE_MEASURED);
               o.setVariableMeasured(tvs.get(0).getValue());
               cachedObservations.add(o);
@@ -84,6 +85,9 @@ public class Processor {
           // Save observations in batch
           observationRepository.saveAll(cachedObservations);
           cachedObservations.clear();
+        }
+        if (limit > 0 && numNodesProcessed == limit) {
+          break;
         }
       }
       observationRepository.saveAll(cachedObservations);

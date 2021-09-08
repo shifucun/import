@@ -57,8 +57,13 @@ public class ServerCommand implements Callable<Integer> {
 
   @Option(
       names = {"-b", "--bucket"},
-      description = "GCS bucket to hold the tmcf and csv/tsv files ")
+      description = "GCS bucket to hold the tmcf and csv/tsv files")
   private String bucket;
+
+  @Option(
+      names = {"-l", "--limit"},
+      description = "Limit the node read to first N entries")
+  private Integer limit;
 
   // injected by picocli
   @Spec Model.CommandSpec spec;
@@ -71,7 +76,7 @@ public class ServerCommand implements Callable<Integer> {
     FileGroup fg = FileGroup.Build(files, spec, logger);
     LogWrapper logCtx = new LogWrapper(Debug.Log.newBuilder(), new File(".").toPath());
     Processor processor = new Processor(logCtx);
-    processor.processTables(fg.GetTmcf(), fg.GetCsv(), ',', observationRepository);
+    processor.processTables(fg.GetTmcf(), fg.GetCsv(), ',', observationRepository, limit);
     return 0;
   }
 

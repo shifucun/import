@@ -90,7 +90,8 @@ To build binary: `mvn package`
   java -jar server/target/datacommons-server-0.1-alpha.1.jar \
   OurWorldInData_Covid19.csv \
   OurWorldInData_Covid19.tmcf \
-  -b=datcom-mixer-autopush-resources
+  -b=datcom-mixer-autopush-resources \
+  -l=10000
   ```
 
 Send a request:

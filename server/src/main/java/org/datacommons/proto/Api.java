@@ -5,99 +5,92 @@ package org.datacommons.proto;
 
 public final class Api {
   private Api() {}
-
-  public static void registerAllExtensions(com.google.protobuf.ExtensionRegistryLite registry) {}
-
-  public static void registerAllExtensions(com.google.protobuf.ExtensionRegistry registry) {
-    registerAllExtensions((com.google.protobuf.ExtensionRegistryLite) registry);
+  public static void registerAllExtensions(
+      com.google.protobuf.ExtensionRegistryLite registry) {
   }
 
-  public interface StatMetadataOrBuilder
-      extends
+  public static void registerAllExtensions(
+      com.google.protobuf.ExtensionRegistry registry) {
+    registerAllExtensions(
+        (com.google.protobuf.ExtensionRegistryLite) registry);
+  }
+  public interface StatMetadataOrBuilder extends
       // @@protoc_insertion_point(interface_extends:org.datacommons.proto.StatMetadata)
       com.google.protobuf.MessageOrBuilder {
 
     /**
      * <code>string import_name = 1;</code>
-     *
      * @return The importName.
      */
     java.lang.String getImportName();
     /**
      * <code>string import_name = 1;</code>
-     *
      * @return The bytes for importName.
      */
-    com.google.protobuf.ByteString getImportNameBytes();
+    com.google.protobuf.ByteString
+        getImportNameBytes();
 
     /**
      * <code>string provenance_url = 2;</code>
-     *
      * @return The provenanceUrl.
      */
     java.lang.String getProvenanceUrl();
     /**
      * <code>string provenance_url = 2;</code>
-     *
      * @return The bytes for provenanceUrl.
      */
-    com.google.protobuf.ByteString getProvenanceUrlBytes();
+    com.google.protobuf.ByteString
+        getProvenanceUrlBytes();
 
     /**
      * <code>string measurement_method = 3;</code>
-     *
      * @return The measurementMethod.
      */
     java.lang.String getMeasurementMethod();
     /**
      * <code>string measurement_method = 3;</code>
-     *
      * @return The bytes for measurementMethod.
      */
-    com.google.protobuf.ByteString getMeasurementMethodBytes();
+    com.google.protobuf.ByteString
+        getMeasurementMethodBytes();
 
     /**
      * <code>string observation_period = 4;</code>
-     *
      * @return The observationPeriod.
      */
     java.lang.String getObservationPeriod();
     /**
      * <code>string observation_period = 4;</code>
-     *
      * @return The bytes for observationPeriod.
      */
-    com.google.protobuf.ByteString getObservationPeriodBytes();
+    com.google.protobuf.ByteString
+        getObservationPeriodBytes();
 
     /**
      * <code>string scaling_factor = 5;</code>
-     *
      * @return The scalingFactor.
      */
     java.lang.String getScalingFactor();
     /**
      * <code>string scaling_factor = 5;</code>
-     *
      * @return The bytes for scalingFactor.
      */
-    com.google.protobuf.ByteString getScalingFactorBytes();
+    com.google.protobuf.ByteString
+        getScalingFactorBytes();
 
     /**
      * <code>string unit = 6;</code>
-     *
      * @return The unit.
      */
     java.lang.String getUnit();
     /**
      * <code>string unit = 6;</code>
-     *
      * @return The bytes for unit.
      */
-    com.google.protobuf.ByteString getUnitBytes();
+    com.google.protobuf.ByteString
+        getUnitBytes();
   }
   /**
-   *
-   *
    * <pre>
    * StatMetadata contains the source and measurement information for a
    * statistical observation.
@@ -105,16 +98,15 @@ public final class Api {
    *
    * Protobuf type {@code org.datacommons.proto.StatMetadata}
    */
-  public static final class StatMetadata extends com.google.protobuf.GeneratedMessageV3
-      implements
+  public  static final class StatMetadata extends
+      com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:org.datacommons.proto.StatMetadata)
       StatMetadataOrBuilder {
-    private static final long serialVersionUID = 0L;
+  private static final long serialVersionUID = 0L;
     // Use StatMetadata.newBuilder() to construct.
     private StatMetadata(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
     private StatMetadata() {
       importName_ = "";
       provenanceUrl_ = "";
@@ -126,15 +118,16 @@ public final class Api {
 
     @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
       return new StatMetadata();
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
       return this.unknownFields;
     }
-
     private StatMetadata(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -153,87 +146,78 @@ public final class Api {
             case 0:
               done = true;
               break;
-            case 10:
-              {
-                java.lang.String s = input.readStringRequireUtf8();
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
 
-                importName_ = s;
-                break;
-              }
-            case 18:
-              {
-                java.lang.String s = input.readStringRequireUtf8();
+              importName_ = s;
+              break;
+            }
+            case 18: {
+              java.lang.String s = input.readStringRequireUtf8();
 
-                provenanceUrl_ = s;
-                break;
-              }
-            case 26:
-              {
-                java.lang.String s = input.readStringRequireUtf8();
+              provenanceUrl_ = s;
+              break;
+            }
+            case 26: {
+              java.lang.String s = input.readStringRequireUtf8();
 
-                measurementMethod_ = s;
-                break;
-              }
-            case 34:
-              {
-                java.lang.String s = input.readStringRequireUtf8();
+              measurementMethod_ = s;
+              break;
+            }
+            case 34: {
+              java.lang.String s = input.readStringRequireUtf8();
 
-                observationPeriod_ = s;
-                break;
-              }
-            case 42:
-              {
-                java.lang.String s = input.readStringRequireUtf8();
+              observationPeriod_ = s;
+              break;
+            }
+            case 42: {
+              java.lang.String s = input.readStringRequireUtf8();
 
-                scalingFactor_ = s;
-                break;
-              }
-            case 50:
-              {
-                java.lang.String s = input.readStringRequireUtf8();
+              scalingFactor_ = s;
+              break;
+            }
+            case 50: {
+              java.lang.String s = input.readStringRequireUtf8();
 
-                unit_ = s;
-                break;
+              unit_ = s;
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
               }
-            default:
-              {
-                if (!parseUnknownField(input, unknownFields, extensionRegistry, tag)) {
-                  done = true;
-                }
-                break;
-              }
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(e).setUnfinishedMessage(this);
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
       } finally {
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
     }
-
-    public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
-      return org.datacommons.proto.Api
-          .internal_static_org_datacommons_proto_StatMetadata_descriptor;
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return org.datacommons.proto.Api.internal_static_org_datacommons_proto_StatMetadata_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.datacommons.proto.Api
-          .internal_static_org_datacommons_proto_StatMetadata_fieldAccessorTable
+      return org.datacommons.proto.Api.internal_static_org_datacommons_proto_StatMetadata_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.datacommons.proto.Api.StatMetadata.class,
-              org.datacommons.proto.Api.StatMetadata.Builder.class);
+              org.datacommons.proto.Api.StatMetadata.class, org.datacommons.proto.Api.StatMetadata.Builder.class);
     }
 
     public static final int IMPORT_NAME_FIELD_NUMBER = 1;
     private volatile java.lang.Object importName_;
     /**
      * <code>string import_name = 1;</code>
-     *
      * @return The importName.
      */
     public java.lang.String getImportName() {
@@ -241,7 +225,8 @@ public final class Api {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         importName_ = s;
         return s;
@@ -249,14 +234,15 @@ public final class Api {
     }
     /**
      * <code>string import_name = 1;</code>
-     *
      * @return The bytes for importName.
      */
-    public com.google.protobuf.ByteString getImportNameBytes() {
+    public com.google.protobuf.ByteString
+        getImportNameBytes() {
       java.lang.Object ref = importName_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         importName_ = b;
         return b;
       } else {
@@ -268,7 +254,6 @@ public final class Api {
     private volatile java.lang.Object provenanceUrl_;
     /**
      * <code>string provenance_url = 2;</code>
-     *
      * @return The provenanceUrl.
      */
     public java.lang.String getProvenanceUrl() {
@@ -276,7 +261,8 @@ public final class Api {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         provenanceUrl_ = s;
         return s;
@@ -284,14 +270,15 @@ public final class Api {
     }
     /**
      * <code>string provenance_url = 2;</code>
-     *
      * @return The bytes for provenanceUrl.
      */
-    public com.google.protobuf.ByteString getProvenanceUrlBytes() {
+    public com.google.protobuf.ByteString
+        getProvenanceUrlBytes() {
       java.lang.Object ref = provenanceUrl_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         provenanceUrl_ = b;
         return b;
       } else {
@@ -303,7 +290,6 @@ public final class Api {
     private volatile java.lang.Object measurementMethod_;
     /**
      * <code>string measurement_method = 3;</code>
-     *
      * @return The measurementMethod.
      */
     public java.lang.String getMeasurementMethod() {
@@ -311,7 +297,8 @@ public final class Api {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         measurementMethod_ = s;
         return s;
@@ -319,14 +306,15 @@ public final class Api {
     }
     /**
      * <code>string measurement_method = 3;</code>
-     *
      * @return The bytes for measurementMethod.
      */
-    public com.google.protobuf.ByteString getMeasurementMethodBytes() {
+    public com.google.protobuf.ByteString
+        getMeasurementMethodBytes() {
       java.lang.Object ref = measurementMethod_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         measurementMethod_ = b;
         return b;
       } else {
@@ -338,7 +326,6 @@ public final class Api {
     private volatile java.lang.Object observationPeriod_;
     /**
      * <code>string observation_period = 4;</code>
-     *
      * @return The observationPeriod.
      */
     public java.lang.String getObservationPeriod() {
@@ -346,7 +333,8 @@ public final class Api {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         observationPeriod_ = s;
         return s;
@@ -354,14 +342,15 @@ public final class Api {
     }
     /**
      * <code>string observation_period = 4;</code>
-     *
      * @return The bytes for observationPeriod.
      */
-    public com.google.protobuf.ByteString getObservationPeriodBytes() {
+    public com.google.protobuf.ByteString
+        getObservationPeriodBytes() {
       java.lang.Object ref = observationPeriod_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         observationPeriod_ = b;
         return b;
       } else {
@@ -373,7 +362,6 @@ public final class Api {
     private volatile java.lang.Object scalingFactor_;
     /**
      * <code>string scaling_factor = 5;</code>
-     *
      * @return The scalingFactor.
      */
     public java.lang.String getScalingFactor() {
@@ -381,7 +369,8 @@ public final class Api {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         scalingFactor_ = s;
         return s;
@@ -389,14 +378,15 @@ public final class Api {
     }
     /**
      * <code>string scaling_factor = 5;</code>
-     *
      * @return The bytes for scalingFactor.
      */
-    public com.google.protobuf.ByteString getScalingFactorBytes() {
+    public com.google.protobuf.ByteString
+        getScalingFactorBytes() {
       java.lang.Object ref = scalingFactor_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         scalingFactor_ = b;
         return b;
       } else {
@@ -408,7 +398,6 @@ public final class Api {
     private volatile java.lang.Object unit_;
     /**
      * <code>string unit = 6;</code>
-     *
      * @return The unit.
      */
     public java.lang.String getUnit() {
@@ -416,7 +405,8 @@ public final class Api {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         unit_ = s;
         return s;
@@ -424,14 +414,15 @@ public final class Api {
     }
     /**
      * <code>string unit = 6;</code>
-     *
      * @return The bytes for unit.
      */
-    public com.google.protobuf.ByteString getUnitBytes() {
+    public com.google.protobuf.ByteString
+        getUnitBytes() {
       java.lang.Object ref = unit_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b =
-            com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
         unit_ = b;
         return b;
       } else {
@@ -440,7 +431,6 @@ public final class Api {
     }
 
     private byte memoizedIsInitialized = -1;
-
     @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -452,7 +442,8 @@ public final class Api {
     }
 
     @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
       if (!getImportNameBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, importName_);
       }
@@ -506,19 +497,25 @@ public final class Api {
     @java.lang.Override
     public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
-        return true;
+       return true;
       }
       if (!(obj instanceof org.datacommons.proto.Api.StatMetadata)) {
         return super.equals(obj);
       }
       org.datacommons.proto.Api.StatMetadata other = (org.datacommons.proto.Api.StatMetadata) obj;
 
-      if (!getImportName().equals(other.getImportName())) return false;
-      if (!getProvenanceUrl().equals(other.getProvenanceUrl())) return false;
-      if (!getMeasurementMethod().equals(other.getMeasurementMethod())) return false;
-      if (!getObservationPeriod().equals(other.getObservationPeriod())) return false;
-      if (!getScalingFactor().equals(other.getScalingFactor())) return false;
-      if (!getUnit().equals(other.getUnit())) return false;
+      if (!getImportName()
+          .equals(other.getImportName())) return false;
+      if (!getProvenanceUrl()
+          .equals(other.getProvenanceUrl())) return false;
+      if (!getMeasurementMethod()
+          .equals(other.getMeasurementMethod())) return false;
+      if (!getObservationPeriod()
+          .equals(other.getObservationPeriod())) return false;
+      if (!getScalingFactor()
+          .equals(other.getScalingFactor())) return false;
+      if (!getUnit()
+          .equals(other.getUnit())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -547,94 +544,88 @@ public final class Api {
       return hash;
     }
 
-    public static org.datacommons.proto.Api.StatMetadata parseFrom(java.nio.ByteBuffer data)
+    public static org.datacommons.proto.Api.StatMetadata parseFrom(
+        java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-
     public static org.datacommons.proto.Api.StatMetadata parseFrom(
-        java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-
     public static org.datacommons.proto.Api.StatMetadata parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-
     public static org.datacommons.proto.Api.StatMetadata parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-
     public static org.datacommons.proto.Api.StatMetadata parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-
     public static org.datacommons.proto.Api.StatMetadata parseFrom(
-        byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-
     public static org.datacommons.proto.Api.StatMetadata parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
     }
-
     public static org.datacommons.proto.Api.StatMetadata parseFrom(
-        java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-          PARSER, input, extensionRegistry);
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
-    public static org.datacommons.proto.Api.StatMetadata parseDelimitedFrom(
-        java.io.InputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
-    }
-
-    public static org.datacommons.proto.Api.StatMetadata parseDelimitedFrom(
-        java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+    public static org.datacommons.proto.Api.StatMetadata parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
-          PARSER, input, extensionRegistry);
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
     }
-
+    public static org.datacommons.proto.Api.StatMetadata parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
     public static org.datacommons.proto.Api.StatMetadata parseFrom(
-        com.google.protobuf.CodedInputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
     }
-
     public static org.datacommons.proto.Api.StatMetadata parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-          PARSER, input, extensionRegistry);
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
+    public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-
     public static Builder newBuilder(org.datacommons.proto.Api.StatMetadata prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-
     @java.lang.Override
     public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
     }
 
     @java.lang.Override
@@ -644,8 +635,6 @@ public final class Api {
       return builder;
     }
     /**
-     *
-     *
      * <pre>
      * StatMetadata contains the source and measurement information for a
      * statistical observation.
@@ -653,24 +642,21 @@ public final class Api {
      *
      * Protobuf type {@code org.datacommons.proto.StatMetadata}
      */
-    public static final class Builder
-        extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
-        implements
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:org.datacommons.proto.StatMetadata)
         org.datacommons.proto.Api.StatMetadataOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
-        return org.datacommons.proto.Api
-            .internal_static_org_datacommons_proto_StatMetadata_descriptor;
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return org.datacommons.proto.Api.internal_static_org_datacommons_proto_StatMetadata_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.datacommons.proto.Api
-            .internal_static_org_datacommons_proto_StatMetadata_fieldAccessorTable
+        return org.datacommons.proto.Api.internal_static_org_datacommons_proto_StatMetadata_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.datacommons.proto.Api.StatMetadata.class,
-                org.datacommons.proto.Api.StatMetadata.Builder.class);
+                org.datacommons.proto.Api.StatMetadata.class, org.datacommons.proto.Api.StatMetadata.Builder.class);
       }
 
       // Construct using org.datacommons.proto.Api.StatMetadata.newBuilder()
@@ -678,15 +664,16 @@ public final class Api {
         maybeForceBuilderInitialization();
       }
 
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
-
       private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders) {}
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
       }
-
       @java.lang.Override
       public Builder clear() {
         super.clear();
@@ -706,9 +693,9 @@ public final class Api {
       }
 
       @java.lang.Override
-      public com.google.protobuf.Descriptors.Descriptor getDescriptorForType() {
-        return org.datacommons.proto.Api
-            .internal_static_org_datacommons_proto_StatMetadata_descriptor;
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return org.datacommons.proto.Api.internal_static_org_datacommons_proto_StatMetadata_descriptor;
       }
 
       @java.lang.Override
@@ -727,8 +714,7 @@ public final class Api {
 
       @java.lang.Override
       public org.datacommons.proto.Api.StatMetadata buildPartial() {
-        org.datacommons.proto.Api.StatMetadata result =
-            new org.datacommons.proto.Api.StatMetadata(this);
+        org.datacommons.proto.Api.StatMetadata result = new org.datacommons.proto.Api.StatMetadata(this);
         result.importName_ = importName_;
         result.provenanceUrl_ = provenanceUrl_;
         result.measurementMethod_ = measurementMethod_;
@@ -743,41 +729,38 @@ public final class Api {
       public Builder clone() {
         return super.clone();
       }
-
       @java.lang.Override
       public Builder setField(
-          com.google.protobuf.Descriptors.FieldDescriptor field, java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
         return super.setField(field, value);
       }
-
       @java.lang.Override
-      public Builder clearField(com.google.protobuf.Descriptors.FieldDescriptor field) {
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-
       @java.lang.Override
-      public Builder clearOneof(com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-
       @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index,
-          java.lang.Object value) {
+          int index, java.lang.Object value) {
         return super.setRepeatedField(field, index, value);
       }
-
       @java.lang.Override
       public Builder addRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field, java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof org.datacommons.proto.Api.StatMetadata) {
-          return mergeFrom((org.datacommons.proto.Api.StatMetadata) other);
+          return mergeFrom((org.datacommons.proto.Api.StatMetadata)other);
         } else {
           super.mergeFrom(other);
           return this;
@@ -842,13 +825,13 @@ public final class Api {
       private java.lang.Object importName_ = "";
       /**
        * <code>string import_name = 1;</code>
-       *
        * @return The importName.
        */
       public java.lang.String getImportName() {
         java.lang.Object ref = importName_;
         if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
           importName_ = s;
           return s;
@@ -858,14 +841,15 @@ public final class Api {
       }
       /**
        * <code>string import_name = 1;</code>
-       *
        * @return The bytes for importName.
        */
-      public com.google.protobuf.ByteString getImportNameBytes() {
+      public com.google.protobuf.ByteString
+          getImportNameBytes() {
         java.lang.Object ref = importName_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
           importName_ = b;
           return b;
         } else {
@@ -874,42 +858,41 @@ public final class Api {
       }
       /**
        * <code>string import_name = 1;</code>
-       *
        * @param value The importName to set.
        * @return This builder for chaining.
        */
-      public Builder setImportName(java.lang.String value) {
+      public Builder setImportName(
+          java.lang.String value) {
         if (value == null) {
-          throw new NullPointerException();
-        }
-
+    throw new NullPointerException();
+  }
+  
         importName_ = value;
         onChanged();
         return this;
       }
       /**
        * <code>string import_name = 1;</code>
-       *
        * @return This builder for chaining.
        */
       public Builder clearImportName() {
-
+        
         importName_ = getDefaultInstance().getImportName();
         onChanged();
         return this;
       }
       /**
        * <code>string import_name = 1;</code>
-       *
        * @param value The bytes for importName to set.
        * @return This builder for chaining.
        */
-      public Builder setImportNameBytes(com.google.protobuf.ByteString value) {
+      public Builder setImportNameBytes(
+          com.google.protobuf.ByteString value) {
         if (value == null) {
-          throw new NullPointerException();
-        }
-        checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
         importName_ = value;
         onChanged();
         return this;
@@ -918,13 +901,13 @@ public final class Api {
       private java.lang.Object provenanceUrl_ = "";
       /**
        * <code>string provenance_url = 2;</code>
-       *
        * @return The provenanceUrl.
        */
       public java.lang.String getProvenanceUrl() {
         java.lang.Object ref = provenanceUrl_;
         if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
           provenanceUrl_ = s;
           return s;
@@ -934,14 +917,15 @@ public final class Api {
       }
       /**
        * <code>string provenance_url = 2;</code>
-       *
        * @return The bytes for provenanceUrl.
        */
-      public com.google.protobuf.ByteString getProvenanceUrlBytes() {
+      public com.google.protobuf.ByteString
+          getProvenanceUrlBytes() {
         java.lang.Object ref = provenanceUrl_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
           provenanceUrl_ = b;
           return b;
         } else {
@@ -950,42 +934,41 @@ public final class Api {
       }
       /**
        * <code>string provenance_url = 2;</code>
-       *
        * @param value The provenanceUrl to set.
        * @return This builder for chaining.
        */
-      public Builder setProvenanceUrl(java.lang.String value) {
+      public Builder setProvenanceUrl(
+          java.lang.String value) {
         if (value == null) {
-          throw new NullPointerException();
-        }
-
+    throw new NullPointerException();
+  }
+  
         provenanceUrl_ = value;
         onChanged();
         return this;
       }
       /**
        * <code>string provenance_url = 2;</code>
-       *
        * @return This builder for chaining.
        */
       public Builder clearProvenanceUrl() {
-
+        
         provenanceUrl_ = getDefaultInstance().getProvenanceUrl();
         onChanged();
         return this;
       }
       /**
        * <code>string provenance_url = 2;</code>
-       *
        * @param value The bytes for provenanceUrl to set.
        * @return This builder for chaining.
        */
-      public Builder setProvenanceUrlBytes(com.google.protobuf.ByteString value) {
+      public Builder setProvenanceUrlBytes(
+          com.google.protobuf.ByteString value) {
         if (value == null) {
-          throw new NullPointerException();
-        }
-        checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
         provenanceUrl_ = value;
         onChanged();
         return this;
@@ -994,13 +977,13 @@ public final class Api {
       private java.lang.Object measurementMethod_ = "";
       /**
        * <code>string measurement_method = 3;</code>
-       *
        * @return The measurementMethod.
        */
       public java.lang.String getMeasurementMethod() {
         java.lang.Object ref = measurementMethod_;
         if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
           measurementMethod_ = s;
           return s;
@@ -1010,14 +993,15 @@ public final class Api {
       }
       /**
        * <code>string measurement_method = 3;</code>
-       *
        * @return The bytes for measurementMethod.
        */
-      public com.google.protobuf.ByteString getMeasurementMethodBytes() {
+      public com.google.protobuf.ByteString
+          getMeasurementMethodBytes() {
         java.lang.Object ref = measurementMethod_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
           measurementMethod_ = b;
           return b;
         } else {
@@ -1026,42 +1010,41 @@ public final class Api {
       }
       /**
        * <code>string measurement_method = 3;</code>
-       *
        * @param value The measurementMethod to set.
        * @return This builder for chaining.
        */
-      public Builder setMeasurementMethod(java.lang.String value) {
+      public Builder setMeasurementMethod(
+          java.lang.String value) {
         if (value == null) {
-          throw new NullPointerException();
-        }
-
+    throw new NullPointerException();
+  }
+  
         measurementMethod_ = value;
         onChanged();
         return this;
       }
       /**
        * <code>string measurement_method = 3;</code>
-       *
        * @return This builder for chaining.
        */
       public Builder clearMeasurementMethod() {
-
+        
         measurementMethod_ = getDefaultInstance().getMeasurementMethod();
         onChanged();
         return this;
       }
       /**
        * <code>string measurement_method = 3;</code>
-       *
        * @param value The bytes for measurementMethod to set.
        * @return This builder for chaining.
        */
-      public Builder setMeasurementMethodBytes(com.google.protobuf.ByteString value) {
+      public Builder setMeasurementMethodBytes(
+          com.google.protobuf.ByteString value) {
         if (value == null) {
-          throw new NullPointerException();
-        }
-        checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
         measurementMethod_ = value;
         onChanged();
         return this;
@@ -1070,13 +1053,13 @@ public final class Api {
       private java.lang.Object observationPeriod_ = "";
       /**
        * <code>string observation_period = 4;</code>
-       *
        * @return The observationPeriod.
        */
       public java.lang.String getObservationPeriod() {
         java.lang.Object ref = observationPeriod_;
         if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
           observationPeriod_ = s;
           return s;
@@ -1086,14 +1069,15 @@ public final class Api {
       }
       /**
        * <code>string observation_period = 4;</code>
-       *
        * @return The bytes for observationPeriod.
        */
-      public com.google.protobuf.ByteString getObservationPeriodBytes() {
+      public com.google.protobuf.ByteString
+          getObservationPeriodBytes() {
         java.lang.Object ref = observationPeriod_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
           observationPeriod_ = b;
           return b;
         } else {
@@ -1102,42 +1086,41 @@ public final class Api {
       }
       /**
        * <code>string observation_period = 4;</code>
-       *
        * @param value The observationPeriod to set.
        * @return This builder for chaining.
        */
-      public Builder setObservationPeriod(java.lang.String value) {
+      public Builder setObservationPeriod(
+          java.lang.String value) {
         if (value == null) {
-          throw new NullPointerException();
-        }
-
+    throw new NullPointerException();
+  }
+  
         observationPeriod_ = value;
         onChanged();
         return this;
       }
       /**
        * <code>string observation_period = 4;</code>
-       *
        * @return This builder for chaining.
        */
       public Builder clearObservationPeriod() {
-
+        
         observationPeriod_ = getDefaultInstance().getObservationPeriod();
         onChanged();
         return this;
       }
       /**
        * <code>string observation_period = 4;</code>
-       *
        * @param value The bytes for observationPeriod to set.
        * @return This builder for chaining.
        */
-      public Builder setObservationPeriodBytes(com.google.protobuf.ByteString value) {
+      public Builder setObservationPeriodBytes(
+          com.google.protobuf.ByteString value) {
         if (value == null) {
-          throw new NullPointerException();
-        }
-        checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
         observationPeriod_ = value;
         onChanged();
         return this;
@@ -1146,13 +1129,13 @@ public final class Api {
       private java.lang.Object scalingFactor_ = "";
       /**
        * <code>string scaling_factor = 5;</code>
-       *
        * @return The scalingFactor.
        */
       public java.lang.String getScalingFactor() {
         java.lang.Object ref = scalingFactor_;
         if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
           scalingFactor_ = s;
           return s;
@@ -1162,14 +1145,15 @@ public final class Api {
       }
       /**
        * <code>string scaling_factor = 5;</code>
-       *
        * @return The bytes for scalingFactor.
        */
-      public com.google.protobuf.ByteString getScalingFactorBytes() {
+      public com.google.protobuf.ByteString
+          getScalingFactorBytes() {
         java.lang.Object ref = scalingFactor_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
           scalingFactor_ = b;
           return b;
         } else {
@@ -1178,42 +1162,41 @@ public final class Api {
       }
       /**
        * <code>string scaling_factor = 5;</code>
-       *
        * @param value The scalingFactor to set.
        * @return This builder for chaining.
        */
-      public Builder setScalingFactor(java.lang.String value) {
+      public Builder setScalingFactor(
+          java.lang.String value) {
         if (value == null) {
-          throw new NullPointerException();
-        }
-
+    throw new NullPointerException();
+  }
+  
         scalingFactor_ = value;
         onChanged();
         return this;
       }
       /**
        * <code>string scaling_factor = 5;</code>
-       *
        * @return This builder for chaining.
        */
       public Builder clearScalingFactor() {
-
+        
         scalingFactor_ = getDefaultInstance().getScalingFactor();
         onChanged();
         return this;
       }
       /**
        * <code>string scaling_factor = 5;</code>
-       *
        * @param value The bytes for scalingFactor to set.
        * @return This builder for chaining.
        */
-      public Builder setScalingFactorBytes(com.google.protobuf.ByteString value) {
+      public Builder setScalingFactorBytes(
+          com.google.protobuf.ByteString value) {
         if (value == null) {
-          throw new NullPointerException();
-        }
-        checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
         scalingFactor_ = value;
         onChanged();
         return this;
@@ -1222,13 +1205,13 @@ public final class Api {
       private java.lang.Object unit_ = "";
       /**
        * <code>string unit = 6;</code>
-       *
        * @return The unit.
        */
       public java.lang.String getUnit() {
         java.lang.Object ref = unit_;
         if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs = (com.google.protobuf.ByteString) ref;
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
           unit_ = s;
           return s;
@@ -1238,14 +1221,15 @@ public final class Api {
       }
       /**
        * <code>string unit = 6;</code>
-       *
        * @return The bytes for unit.
        */
-      public com.google.protobuf.ByteString getUnitBytes() {
+      public com.google.protobuf.ByteString
+          getUnitBytes() {
         java.lang.Object ref = unit_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b =
-              com.google.protobuf.ByteString.copyFromUtf8((java.lang.String) ref);
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
           unit_ = b;
           return b;
         } else {
@@ -1254,47 +1238,45 @@ public final class Api {
       }
       /**
        * <code>string unit = 6;</code>
-       *
        * @param value The unit to set.
        * @return This builder for chaining.
        */
-      public Builder setUnit(java.lang.String value) {
+      public Builder setUnit(
+          java.lang.String value) {
         if (value == null) {
-          throw new NullPointerException();
-        }
-
+    throw new NullPointerException();
+  }
+  
         unit_ = value;
         onChanged();
         return this;
       }
       /**
        * <code>string unit = 6;</code>
-       *
        * @return This builder for chaining.
        */
       public Builder clearUnit() {
-
+        
         unit_ = getDefaultInstance().getUnit();
         onChanged();
         return this;
       }
       /**
        * <code>string unit = 6;</code>
-       *
        * @param value The bytes for unit to set.
        * @return This builder for chaining.
        */
-      public Builder setUnitBytes(com.google.protobuf.ByteString value) {
+      public Builder setUnitBytes(
+          com.google.protobuf.ByteString value) {
         if (value == null) {
-          throw new NullPointerException();
-        }
-        checkByteStringIsUtf8(value);
-
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
         unit_ = value;
         onChanged();
         return this;
       }
-
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -1307,12 +1289,12 @@ public final class Api {
         return super.mergeUnknownFields(unknownFields);
       }
 
+
       // @@protoc_insertion_point(builder_scope:org.datacommons.proto.StatMetadata)
     }
 
     // @@protoc_insertion_point(class_scope:org.datacommons.proto.StatMetadata)
     private static final org.datacommons.proto.Api.StatMetadata DEFAULT_INSTANCE;
-
     static {
       DEFAULT_INSTANCE = new org.datacommons.proto.Api.StatMetadata();
     }
@@ -1321,16 +1303,16 @@ public final class Api {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<StatMetadata> PARSER =
-        new com.google.protobuf.AbstractParser<StatMetadata>() {
-          @java.lang.Override
-          public StatMetadata parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new StatMetadata(input, extensionRegistry);
-          }
-        };
+    private static final com.google.protobuf.Parser<StatMetadata>
+        PARSER = new com.google.protobuf.AbstractParser<StatMetadata>() {
+      @java.lang.Override
+      public StatMetadata parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new StatMetadata(input, extensionRegistry);
+      }
+    };
 
     public static com.google.protobuf.Parser<StatMetadata> parser() {
       return PARSER;
@@ -1345,16 +1327,14 @@ public final class Api {
     public org.datacommons.proto.Api.StatMetadata getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
+
   }
 
-  public interface SeriesOrBuilder
-      extends
+  public interface SeriesOrBuilder extends
       // @@protoc_insertion_point(interface_extends:org.datacommons.proto.Series)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     *
-     *
      * <pre>
      * Map from date to stat value.
      * </pre>
@@ -1363,76 +1343,70 @@ public final class Api {
      */
     int getValCount();
     /**
-     *
-     *
      * <pre>
      * Map from date to stat value.
      * </pre>
      *
      * <code>map&lt;string, double&gt; val = 1;</code>
      */
-    boolean containsVal(java.lang.String key);
-    /** Use {@link #getValMap()} instead. */
+    boolean containsVal(
+        java.lang.String key);
+    /**
+     * Use {@link #getValMap()} instead.
+     */
     @java.lang.Deprecated
-    java.util.Map<java.lang.String, java.lang.Double> getVal();
+    java.util.Map<java.lang.String, java.lang.Double>
+    getVal();
     /**
-     *
-     *
      * <pre>
      * Map from date to stat value.
      * </pre>
      *
      * <code>map&lt;string, double&gt; val = 1;</code>
      */
-    java.util.Map<java.lang.String, java.lang.Double> getValMap();
+    java.util.Map<java.lang.String, java.lang.Double>
+    getValMap();
     /**
-     *
-     *
      * <pre>
      * Map from date to stat value.
      * </pre>
      *
      * <code>map&lt;string, double&gt; val = 1;</code>
      */
-    double getValOrDefault(java.lang.String key, double defaultValue);
+
+    double getValOrDefault(
+        java.lang.String key,
+        double defaultValue);
     /**
-     *
-     *
      * <pre>
      * Map from date to stat value.
      * </pre>
      *
      * <code>map&lt;string, double&gt; val = 1;</code>
      */
-    double getValOrThrow(java.lang.String key);
+
+    double getValOrThrow(
+        java.lang.String key);
 
     /**
-     *
-     *
      * <pre>
      * Series metadata.
      * </pre>
      *
      * <code>.org.datacommons.proto.StatMetadata metadata = 2;</code>
-     *
      * @return Whether the metadata field is set.
      */
     boolean hasMetadata();
     /**
-     *
-     *
      * <pre>
      * Series metadata.
      * </pre>
      *
      * <code>.org.datacommons.proto.StatMetadata metadata = 2;</code>
-     *
      * @return The metadata.
      */
     org.datacommons.proto.Api.StatMetadata getMetadata();
     /**
-     *
-     *
      * <pre>
      * Series metadata.
      * </pre>
@@ -1442,37 +1416,36 @@ public final class Api {
     org.datacommons.proto.Api.StatMetadataOrBuilder getMetadataOrBuilder();
   }
   /**
-   *
-   *
    * <pre>
    * Represents a time series from a source.
    * </pre>
    *
    * Protobuf type {@code org.datacommons.proto.Series}
    */
-  public static final class Series extends com.google.protobuf.GeneratedMessageV3
-      implements
+  public  static final class Series extends
+      com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:org.datacommons.proto.Series)
       SeriesOrBuilder {
-    private static final long serialVersionUID = 0L;
+  private static final long serialVersionUID = 0L;
     // Use Series.newBuilder() to construct.
     private Series(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
-    private Series() {}
+    private Series() {
+    }
 
     @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
       return new Series();
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
       return this.unknownFields;
     }
-
     private Series(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1492,97 +1465,95 @@ public final class Api {
             case 0:
               done = true;
               break;
-            case 10:
-              {
-                if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                  val_ =
-                      com.google.protobuf.MapField.newMapField(ValDefaultEntryHolder.defaultEntry);
-                  mutable_bitField0_ |= 0x00000001;
-                }
-                com.google.protobuf.MapEntry<java.lang.String, java.lang.Double> val__ =
-                    input.readMessage(
-                        ValDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-                val_.getMutableMap().put(val__.getKey(), val__.getValue());
-                break;
+            case 10: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                val_ = com.google.protobuf.MapField.newMapField(
+                    ValDefaultEntryHolder.defaultEntry);
+                mutable_bitField0_ |= 0x00000001;
               }
-            case 18:
-              {
-                org.datacommons.proto.Api.StatMetadata.Builder subBuilder = null;
-                if (metadata_ != null) {
-                  subBuilder = metadata_.toBuilder();
-                }
-                metadata_ =
-                    input.readMessage(
-                        org.datacommons.proto.Api.StatMetadata.parser(), extensionRegistry);
-                if (subBuilder != null) {
-                  subBuilder.mergeFrom(metadata_);
-                  metadata_ = subBuilder.buildPartial();
-                }
+              com.google.protobuf.MapEntry<java.lang.String, java.lang.Double>
+              val__ = input.readMessage(
+                  ValDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              val_.getMutableMap().put(
+                  val__.getKey(), val__.getValue());
+              break;
+            }
+            case 18: {
+              org.datacommons.proto.Api.StatMetadata.Builder subBuilder = null;
+              if (metadata_ != null) {
+                subBuilder = metadata_.toBuilder();
+              }
+              metadata_ = input.readMessage(org.datacommons.proto.Api.StatMetadata.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(metadata_);
+                metadata_ = subBuilder.buildPartial();
+              }
 
-                break;
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
               }
-            default:
-              {
-                if (!parseUnknownField(input, unknownFields, extensionRegistry, tag)) {
-                  done = true;
-                }
-                break;
-              }
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(e).setUnfinishedMessage(this);
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
       } finally {
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
     }
-
-    public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
       return org.datacommons.proto.Api.internal_static_org_datacommons_proto_Series_descriptor;
     }
 
     @SuppressWarnings({"rawtypes"})
     @java.lang.Override
-    protected com.google.protobuf.MapField internalGetMapField(int number) {
+    protected com.google.protobuf.MapField internalGetMapField(
+        int number) {
       switch (number) {
         case 1:
           return internalGetVal();
         default:
-          throw new RuntimeException("Invalid map field number: " + number);
+          throw new RuntimeException(
+              "Invalid map field number: " + number);
       }
     }
-
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.datacommons.proto.Api
-          .internal_static_org_datacommons_proto_Series_fieldAccessorTable
+      return org.datacommons.proto.Api.internal_static_org_datacommons_proto_Series_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.datacommons.proto.Api.Series.class,
-              org.datacommons.proto.Api.Series.Builder.class);
+              org.datacommons.proto.Api.Series.class, org.datacommons.proto.Api.Series.Builder.class);
     }
 
     public static final int VAL_FIELD_NUMBER = 1;
-
     private static final class ValDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<java.lang.String, java.lang.Double> defaultEntry =
-          com.google.protobuf.MapEntry.<java.lang.String, java.lang.Double>newDefaultInstance(
-              org.datacommons.proto.Api
-                  .internal_static_org_datacommons_proto_Series_ValEntry_descriptor,
-              com.google.protobuf.WireFormat.FieldType.STRING,
-              "",
-              com.google.protobuf.WireFormat.FieldType.DOUBLE,
-              0D);
+      static final com.google.protobuf.MapEntry<
+          java.lang.String, java.lang.Double> defaultEntry =
+              com.google.protobuf.MapEntry
+              .<java.lang.String, java.lang.Double>newDefaultInstance(
+                  org.datacommons.proto.Api.internal_static_org_datacommons_proto_Series_ValEntry_descriptor, 
+                  com.google.protobuf.WireFormat.FieldType.STRING,
+                  "",
+                  com.google.protobuf.WireFormat.FieldType.DOUBLE,
+                  0D);
     }
-
-    private com.google.protobuf.MapField<java.lang.String, java.lang.Double> val_;
-
-    private com.google.protobuf.MapField<java.lang.String, java.lang.Double> internalGetVal() {
+    private com.google.protobuf.MapField<
+        java.lang.String, java.lang.Double> val_;
+    private com.google.protobuf.MapField<java.lang.String, java.lang.Double>
+    internalGetVal() {
       if (val_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(ValDefaultEntryHolder.defaultEntry);
+        return com.google.protobuf.MapField.emptyMapField(
+            ValDefaultEntryHolder.defaultEntry);
       }
       return val_;
     }
@@ -1591,67 +1562,65 @@ public final class Api {
       return internalGetVal().getMap().size();
     }
     /**
-     *
-     *
      * <pre>
      * Map from date to stat value.
      * </pre>
      *
      * <code>map&lt;string, double&gt; val = 1;</code>
      */
-    public boolean containsVal(java.lang.String key) {
-      if (key == null) {
-        throw new java.lang.NullPointerException();
-      }
+
+    public boolean containsVal(
+        java.lang.String key) {
+      if (key == null) { throw new java.lang.NullPointerException(); }
       return internalGetVal().getMap().containsKey(key);
     }
-    /** Use {@link #getValMap()} instead. */
+    /**
+     * Use {@link #getValMap()} instead.
+     */
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.Double> getVal() {
       return getValMap();
     }
     /**
-     *
-     *
      * <pre>
      * Map from date to stat value.
      * </pre>
      *
      * <code>map&lt;string, double&gt; val = 1;</code>
      */
+
     public java.util.Map<java.lang.String, java.lang.Double> getValMap() {
       return internalGetVal().getMap();
     }
     /**
-     *
-     *
      * <pre>
      * Map from date to stat value.
      * </pre>
      *
      * <code>map&lt;string, double&gt; val = 1;</code>
      */
-    public double getValOrDefault(java.lang.String key, double defaultValue) {
-      if (key == null) {
-        throw new java.lang.NullPointerException();
-      }
-      java.util.Map<java.lang.String, java.lang.Double> map = internalGetVal().getMap();
+
+    public double getValOrDefault(
+        java.lang.String key,
+        double defaultValue) {
+      if (key == null) { throw new java.lang.NullPointerException(); }
+      java.util.Map<java.lang.String, java.lang.Double> map =
+          internalGetVal().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     *
-     *
      * <pre>
      * Map from date to stat value.
      * </pre>
      *
      * <code>map&lt;string, double&gt; val = 1;</code>
      */
-    public double getValOrThrow(java.lang.String key) {
-      if (key == null) {
-        throw new java.lang.NullPointerException();
-      }
-      java.util.Map<java.lang.String, java.lang.Double> map = internalGetVal().getMap();
+
+    public double getValOrThrow(
+        java.lang.String key) {
+      if (key == null) { throw new java.lang.NullPointerException(); }
+      java.util.Map<java.lang.String, java.lang.Double> map =
+          internalGetVal().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
       }
@@ -1661,38 +1630,28 @@ public final class Api {
     public static final int METADATA_FIELD_NUMBER = 2;
     private org.datacommons.proto.Api.StatMetadata metadata_;
     /**
-     *
-     *
      * <pre>
      * Series metadata.
      * </pre>
      *
      * <code>.org.datacommons.proto.StatMetadata metadata = 2;</code>
-     *
      * @return Whether the metadata field is set.
      */
     public boolean hasMetadata() {
       return metadata_ != null;
     }
     /**
-     *
-     *
      * <pre>
      * Series metadata.
      * </pre>
      *
      * <code>.org.datacommons.proto.StatMetadata metadata = 2;</code>
-     *
      * @return The metadata.
      */
     public org.datacommons.proto.Api.StatMetadata getMetadata() {
-      return metadata_ == null
-          ? org.datacommons.proto.Api.StatMetadata.getDefaultInstance()
-          : metadata_;
+      return metadata_ == null ? org.datacommons.proto.Api.StatMetadata.getDefaultInstance() : metadata_;
     }
     /**
-     *
-     *
      * <pre>
      * Series metadata.
      * </pre>
@@ -1704,7 +1663,6 @@ public final class Api {
     }
 
     private byte memoizedIsInitialized = -1;
-
     @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -1716,9 +1674,14 @@ public final class Api {
     }
 
     @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      com.google.protobuf.GeneratedMessageV3.serializeStringMapTo(
-          output, internalGetVal(), ValDefaultEntryHolder.defaultEntry, 1);
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      com.google.protobuf.GeneratedMessageV3
+        .serializeStringMapTo(
+          output,
+          internalGetVal(),
+          ValDefaultEntryHolder.defaultEntry,
+          1);
       if (metadata_ != null) {
         output.writeMessage(2, getMetadata());
       }
@@ -1731,18 +1694,19 @@ public final class Api {
       if (size != -1) return size;
 
       size = 0;
-      for (java.util.Map.Entry<java.lang.String, java.lang.Double> entry :
-          internalGetVal().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.String, java.lang.Double> val__ =
-            ValDefaultEntryHolder.defaultEntry
-                .newBuilderForType()
-                .setKey(entry.getKey())
-                .setValue(entry.getValue())
-                .build();
-        size += com.google.protobuf.CodedOutputStream.computeMessageSize(1, val__);
+      for (java.util.Map.Entry<java.lang.String, java.lang.Double> entry
+           : internalGetVal().getMap().entrySet()) {
+        com.google.protobuf.MapEntry<java.lang.String, java.lang.Double>
+        val__ = ValDefaultEntryHolder.defaultEntry.newBuilderForType()
+            .setKey(entry.getKey())
+            .setValue(entry.getValue())
+            .build();
+        size += com.google.protobuf.CodedOutputStream
+            .computeMessageSize(1, val__);
       }
       if (metadata_ != null) {
-        size += com.google.protobuf.CodedOutputStream.computeMessageSize(2, getMetadata());
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, getMetadata());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1752,17 +1716,19 @@ public final class Api {
     @java.lang.Override
     public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
-        return true;
+       return true;
       }
       if (!(obj instanceof org.datacommons.proto.Api.Series)) {
         return super.equals(obj);
       }
       org.datacommons.proto.Api.Series other = (org.datacommons.proto.Api.Series) obj;
 
-      if (!internalGetVal().equals(other.internalGetVal())) return false;
+      if (!internalGetVal().equals(
+          other.internalGetVal())) return false;
       if (hasMetadata() != other.hasMetadata()) return false;
       if (hasMetadata()) {
-        if (!getMetadata().equals(other.getMetadata())) return false;
+        if (!getMetadata()
+            .equals(other.getMetadata())) return false;
       }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -1788,93 +1754,88 @@ public final class Api {
       return hash;
     }
 
-    public static org.datacommons.proto.Api.Series parseFrom(java.nio.ByteBuffer data)
+    public static org.datacommons.proto.Api.Series parseFrom(
+        java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-
     public static org.datacommons.proto.Api.Series parseFrom(
-        java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-
-    public static org.datacommons.proto.Api.Series parseFrom(com.google.protobuf.ByteString data)
+    public static org.datacommons.proto.Api.Series parseFrom(
+        com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-
     public static org.datacommons.proto.Api.Series parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-
     public static org.datacommons.proto.Api.Series parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-
     public static org.datacommons.proto.Api.Series parseFrom(
-        byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-
     public static org.datacommons.proto.Api.Series parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
     }
-
     public static org.datacommons.proto.Api.Series parseFrom(
-        java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-          PARSER, input, extensionRegistry);
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
     public static org.datacommons.proto.Api.Series parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
     }
-
     public static org.datacommons.proto.Api.Series parseDelimitedFrom(
-        java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
-          PARSER, input, extensionRegistry);
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-
     public static org.datacommons.proto.Api.Series parseFrom(
-        com.google.protobuf.CodedInputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
     }
-
     public static org.datacommons.proto.Api.Series parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-          PARSER, input, extensionRegistry);
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
+    public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-
     public static Builder newBuilder(org.datacommons.proto.Api.Series prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-
     @java.lang.Override
     public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
     }
 
     @java.lang.Override
@@ -1884,51 +1845,49 @@ public final class Api {
       return builder;
     }
     /**
-     *
-     *
      * <pre>
      * Represents a time series from a source.
      * </pre>
      *
      * Protobuf type {@code org.datacommons.proto.Series}
      */
-    public static final class Builder
-        extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
-        implements
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:org.datacommons.proto.Series)
         org.datacommons.proto.Api.SeriesOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
         return org.datacommons.proto.Api.internal_static_org_datacommons_proto_Series_descriptor;
       }
 
       @SuppressWarnings({"rawtypes"})
-      protected com.google.protobuf.MapField internalGetMapField(int number) {
+      protected com.google.protobuf.MapField internalGetMapField(
+          int number) {
         switch (number) {
           case 1:
             return internalGetVal();
           default:
-            throw new RuntimeException("Invalid map field number: " + number);
+            throw new RuntimeException(
+                "Invalid map field number: " + number);
         }
       }
-
       @SuppressWarnings({"rawtypes"})
-      protected com.google.protobuf.MapField internalGetMutableMapField(int number) {
+      protected com.google.protobuf.MapField internalGetMutableMapField(
+          int number) {
         switch (number) {
           case 1:
             return internalGetMutableVal();
           default:
-            throw new RuntimeException("Invalid map field number: " + number);
+            throw new RuntimeException(
+                "Invalid map field number: " + number);
         }
       }
-
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.datacommons.proto.Api
-            .internal_static_org_datacommons_proto_Series_fieldAccessorTable
+        return org.datacommons.proto.Api.internal_static_org_datacommons_proto_Series_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.datacommons.proto.Api.Series.class,
-                org.datacommons.proto.Api.Series.Builder.class);
+                org.datacommons.proto.Api.Series.class, org.datacommons.proto.Api.Series.Builder.class);
       }
 
       // Construct using org.datacommons.proto.Api.Series.newBuilder()
@@ -1936,15 +1895,16 @@ public final class Api {
         maybeForceBuilderInitialization();
       }
 
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
-
       private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders) {}
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
       }
-
       @java.lang.Override
       public Builder clear() {
         super.clear();
@@ -1959,7 +1919,8 @@ public final class Api {
       }
 
       @java.lang.Override
-      public com.google.protobuf.Descriptors.Descriptor getDescriptorForType() {
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
         return org.datacommons.proto.Api.internal_static_org_datacommons_proto_Series_descriptor;
       }
 
@@ -1996,41 +1957,38 @@ public final class Api {
       public Builder clone() {
         return super.clone();
       }
-
       @java.lang.Override
       public Builder setField(
-          com.google.protobuf.Descriptors.FieldDescriptor field, java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
         return super.setField(field, value);
       }
-
       @java.lang.Override
-      public Builder clearField(com.google.protobuf.Descriptors.FieldDescriptor field) {
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-
       @java.lang.Override
-      public Builder clearOneof(com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-
       @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index,
-          java.lang.Object value) {
+          int index, java.lang.Object value) {
         return super.setRepeatedField(field, index, value);
       }
-
       @java.lang.Override
       public Builder addRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field, java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof org.datacommons.proto.Api.Series) {
-          return mergeFrom((org.datacommons.proto.Api.Series) other);
+          return mergeFrom((org.datacommons.proto.Api.Series)other);
         } else {
           super.mergeFrom(other);
           return this;
@@ -2039,7 +1997,8 @@ public final class Api {
 
       public Builder mergeFrom(org.datacommons.proto.Api.Series other) {
         if (other == org.datacommons.proto.Api.Series.getDefaultInstance()) return this;
-        internalGetMutableVal().mergeFrom(other.internalGetVal());
+        internalGetMutableVal().mergeFrom(
+            other.internalGetVal());
         if (other.hasMetadata()) {
           mergeMetadata(other.getMetadata());
         }
@@ -2071,24 +2030,24 @@ public final class Api {
         }
         return this;
       }
-
       private int bitField0_;
 
-      private com.google.protobuf.MapField<java.lang.String, java.lang.Double> val_;
-
-      private com.google.protobuf.MapField<java.lang.String, java.lang.Double> internalGetVal() {
+      private com.google.protobuf.MapField<
+          java.lang.String, java.lang.Double> val_;
+      private com.google.protobuf.MapField<java.lang.String, java.lang.Double>
+      internalGetVal() {
         if (val_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(ValDefaultEntryHolder.defaultEntry);
+          return com.google.protobuf.MapField.emptyMapField(
+              ValDefaultEntryHolder.defaultEntry);
         }
         return val_;
       }
-
       private com.google.protobuf.MapField<java.lang.String, java.lang.Double>
-          internalGetMutableVal() {
-        onChanged();
-        ;
+      internalGetMutableVal() {
+        onChanged();;
         if (val_ == null) {
-          val_ = com.google.protobuf.MapField.newMapField(ValDefaultEntryHolder.defaultEntry);
+          val_ = com.google.protobuf.MapField.newMapField(
+              ValDefaultEntryHolder.defaultEntry);
         }
         if (!val_.isMutable()) {
           val_ = val_.copy();
@@ -2100,67 +2059,65 @@ public final class Api {
         return internalGetVal().getMap().size();
       }
       /**
-       *
-       *
        * <pre>
        * Map from date to stat value.
        * </pre>
        *
        * <code>map&lt;string, double&gt; val = 1;</code>
        */
-      public boolean containsVal(java.lang.String key) {
-        if (key == null) {
-          throw new java.lang.NullPointerException();
-        }
+
+      public boolean containsVal(
+          java.lang.String key) {
+        if (key == null) { throw new java.lang.NullPointerException(); }
         return internalGetVal().getMap().containsKey(key);
       }
-      /** Use {@link #getValMap()} instead. */
+      /**
+       * Use {@link #getValMap()} instead.
+       */
       @java.lang.Deprecated
       public java.util.Map<java.lang.String, java.lang.Double> getVal() {
         return getValMap();
       }
       /**
-       *
-       *
        * <pre>
        * Map from date to stat value.
        * </pre>
        *
        * <code>map&lt;string, double&gt; val = 1;</code>
        */
+
       public java.util.Map<java.lang.String, java.lang.Double> getValMap() {
         return internalGetVal().getMap();
       }
       /**
-       *
-       *
        * <pre>
        * Map from date to stat value.
        * </pre>
        *
        * <code>map&lt;string, double&gt; val = 1;</code>
        */
-      public double getValOrDefault(java.lang.String key, double defaultValue) {
-        if (key == null) {
-          throw new java.lang.NullPointerException();
-        }
-        java.util.Map<java.lang.String, java.lang.Double> map = internalGetVal().getMap();
+
+      public double getValOrDefault(
+          java.lang.String key,
+          double defaultValue) {
+        if (key == null) { throw new java.lang.NullPointerException(); }
+        java.util.Map<java.lang.String, java.lang.Double> map =
+            internalGetVal().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       *
-       *
        * <pre>
        * Map from date to stat value.
        * </pre>
        *
        * <code>map&lt;string, double&gt; val = 1;</code>
        */
-      public double getValOrThrow(java.lang.String key) {
-        if (key == null) {
-          throw new java.lang.NullPointerException();
-        }
-        java.util.Map<java.lang.String, java.lang.Double> map = internalGetVal().getMap();
+
+      public double getValOrThrow(
+          java.lang.String key) {
+        if (key == null) { throw new java.lang.NullPointerException(); }
+        java.util.Map<java.lang.String, java.lang.Double> map =
+            internalGetVal().getMap();
         if (!map.containsKey(key)) {
           throw new java.lang.IllegalArgumentException();
         }
@@ -2168,104 +2125,94 @@ public final class Api {
       }
 
       public Builder clearVal() {
-        internalGetMutableVal().getMutableMap().clear();
+        internalGetMutableVal().getMutableMap()
+            .clear();
         return this;
       }
       /**
-       *
-       *
        * <pre>
        * Map from date to stat value.
        * </pre>
        *
        * <code>map&lt;string, double&gt; val = 1;</code>
        */
-      public Builder removeVal(java.lang.String key) {
-        if (key == null) {
-          throw new java.lang.NullPointerException();
-        }
-        internalGetMutableVal().getMutableMap().remove(key);
+
+      public Builder removeVal(
+          java.lang.String key) {
+        if (key == null) { throw new java.lang.NullPointerException(); }
+        internalGetMutableVal().getMutableMap()
+            .remove(key);
         return this;
       }
-      /** Use alternate mutation accessors instead. */
+      /**
+       * Use alternate mutation accessors instead.
+       */
       @java.lang.Deprecated
-      public java.util.Map<java.lang.String, java.lang.Double> getMutableVal() {
+      public java.util.Map<java.lang.String, java.lang.Double>
+      getMutableVal() {
         return internalGetMutableVal().getMutableMap();
       }
       /**
-       *
-       *
        * <pre>
        * Map from date to stat value.
        * </pre>
        *
        * <code>map&lt;string, double&gt; val = 1;</code>
        */
-      public Builder putVal(java.lang.String key, double value) {
-        if (key == null) {
-          throw new java.lang.NullPointerException();
-        }
-
-        internalGetMutableVal().getMutableMap().put(key, value);
+      public Builder putVal(
+          java.lang.String key,
+          double value) {
+        if (key == null) { throw new java.lang.NullPointerException(); }
+        
+        internalGetMutableVal().getMutableMap()
+            .put(key, value);
         return this;
       }
       /**
-       *
-       *
        * <pre>
        * Map from date to stat value.
        * </pre>
        *
        * <code>map&lt;string, double&gt; val = 1;</code>
        */
-      public Builder putAllVal(java.util.Map<java.lang.String, java.lang.Double> values) {
-        internalGetMutableVal().getMutableMap().putAll(values);
+
+      public Builder putAllVal(
+          java.util.Map<java.lang.String, java.lang.Double> values) {
+        internalGetMutableVal().getMutableMap()
+            .putAll(values);
         return this;
       }
 
       private org.datacommons.proto.Api.StatMetadata metadata_;
       private com.google.protobuf.SingleFieldBuilderV3<
-              org.datacommons.proto.Api.StatMetadata,
-              org.datacommons.proto.Api.StatMetadata.Builder,
-              org.datacommons.proto.Api.StatMetadataOrBuilder>
-          metadataBuilder_;
+          org.datacommons.proto.Api.StatMetadata, org.datacommons.proto.Api.StatMetadata.Builder, org.datacommons.proto.Api.StatMetadataOrBuilder> metadataBuilder_;
       /**
-       *
-       *
        * <pre>
        * Series metadata.
        * </pre>
        *
        * <code>.org.datacommons.proto.StatMetadata metadata = 2;</code>
-       *
        * @return Whether the metadata field is set.
        */
       public boolean hasMetadata() {
         return metadataBuilder_ != null || metadata_ != null;
       }
       /**
-       *
-       *
        * <pre>
        * Series metadata.
        * </pre>
        *
        * <code>.org.datacommons.proto.StatMetadata metadata = 2;</code>
-       *
        * @return The metadata.
        */
       public org.datacommons.proto.Api.StatMetadata getMetadata() {
         if (metadataBuilder_ == null) {
-          return metadata_ == null
-              ? org.datacommons.proto.Api.StatMetadata.getDefaultInstance()
-              : metadata_;
+          return metadata_ == null ? org.datacommons.proto.Api.StatMetadata.getDefaultInstance() : metadata_;
         } else {
           return metadataBuilder_.getMessage();
         }
       }
       /**
-       *
-       *
        * <pre>
        * Series metadata.
        * </pre>
@@ -2286,15 +2233,14 @@ public final class Api {
         return this;
       }
       /**
-       *
-       *
        * <pre>
        * Series metadata.
        * </pre>
        *
        * <code>.org.datacommons.proto.StatMetadata metadata = 2;</code>
        */
-      public Builder setMetadata(org.datacommons.proto.Api.StatMetadata.Builder builderForValue) {
+      public Builder setMetadata(
+          org.datacommons.proto.Api.StatMetadata.Builder builderForValue) {
         if (metadataBuilder_ == null) {
           metadata_ = builderForValue.build();
           onChanged();
@@ -2305,8 +2251,6 @@ public final class Api {
         return this;
       }
       /**
-       *
-       *
        * <pre>
        * Series metadata.
        * </pre>
@@ -2317,9 +2261,7 @@ public final class Api {
         if (metadataBuilder_ == null) {
           if (metadata_ != null) {
             metadata_ =
-                org.datacommons.proto.Api.StatMetadata.newBuilder(metadata_)
-                    .mergeFrom(value)
-                    .buildPartial();
+              org.datacommons.proto.Api.StatMetadata.newBuilder(metadata_).mergeFrom(value).buildPartial();
           } else {
             metadata_ = value;
           }
@@ -2331,8 +2273,6 @@ public final class Api {
         return this;
       }
       /**
-       *
-       *
        * <pre>
        * Series metadata.
        * </pre>
@@ -2351,8 +2291,6 @@ public final class Api {
         return this;
       }
       /**
-       *
-       *
        * <pre>
        * Series metadata.
        * </pre>
@@ -2360,13 +2298,11 @@ public final class Api {
        * <code>.org.datacommons.proto.StatMetadata metadata = 2;</code>
        */
       public org.datacommons.proto.Api.StatMetadata.Builder getMetadataBuilder() {
-
+        
         onChanged();
         return getMetadataFieldBuilder().getBuilder();
       }
       /**
-       *
-       *
        * <pre>
        * Series metadata.
        * </pre>
@@ -2377,14 +2313,11 @@ public final class Api {
         if (metadataBuilder_ != null) {
           return metadataBuilder_.getMessageOrBuilder();
         } else {
-          return metadata_ == null
-              ? org.datacommons.proto.Api.StatMetadata.getDefaultInstance()
-              : metadata_;
+          return metadata_ == null ?
+              org.datacommons.proto.Api.StatMetadata.getDefaultInstance() : metadata_;
         }
       }
       /**
-       *
-       *
        * <pre>
        * Series metadata.
        * </pre>
@@ -2392,22 +2325,18 @@ public final class Api {
        * <code>.org.datacommons.proto.StatMetadata metadata = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-              org.datacommons.proto.Api.StatMetadata,
-              org.datacommons.proto.Api.StatMetadata.Builder,
-              org.datacommons.proto.Api.StatMetadataOrBuilder>
+          org.datacommons.proto.Api.StatMetadata, org.datacommons.proto.Api.StatMetadata.Builder, org.datacommons.proto.Api.StatMetadataOrBuilder> 
           getMetadataFieldBuilder() {
         if (metadataBuilder_ == null) {
-          metadataBuilder_ =
-              new com.google.protobuf.SingleFieldBuilderV3<
-                  org.datacommons.proto.Api.StatMetadata,
-                  org.datacommons.proto.Api.StatMetadata.Builder,
-                  org.datacommons.proto.Api.StatMetadataOrBuilder>(
-                  getMetadata(), getParentForChildren(), isClean());
+          metadataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              org.datacommons.proto.Api.StatMetadata, org.datacommons.proto.Api.StatMetadata.Builder, org.datacommons.proto.Api.StatMetadataOrBuilder>(
+                  getMetadata(),
+                  getParentForChildren(),
+                  isClean());
           metadata_ = null;
         }
         return metadataBuilder_;
       }
-
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -2420,12 +2349,12 @@ public final class Api {
         return super.mergeUnknownFields(unknownFields);
       }
 
+
       // @@protoc_insertion_point(builder_scope:org.datacommons.proto.Series)
     }
 
     // @@protoc_insertion_point(class_scope:org.datacommons.proto.Series)
     private static final org.datacommons.proto.Api.Series DEFAULT_INSTANCE;
-
     static {
       DEFAULT_INSTANCE = new org.datacommons.proto.Api.Series();
     }
@@ -2434,16 +2363,16 @@ public final class Api {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<Series> PARSER =
-        new com.google.protobuf.AbstractParser<Series>() {
-          @java.lang.Override
-          public Series parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new Series(input, extensionRegistry);
-          }
-        };
+    private static final com.google.protobuf.Parser<Series>
+        PARSER = new com.google.protobuf.AbstractParser<Series>() {
+      @java.lang.Override
+      public Series parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new Series(input, extensionRegistry);
+      }
+    };
 
     public static com.google.protobuf.Parser<Series> parser() {
       return PARSER;
@@ -2458,16 +2387,14 @@ public final class Api {
     public org.datacommons.proto.Api.Series getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
+
   }
 
-  public interface SeriesMapOrBuilder
-      extends
+  public interface SeriesMapOrBuilder extends
       // @@protoc_insertion_point(interface_extends:org.datacommons.proto.SeriesMap)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     *
-     *
      * <pre>
      * Key is stat var dcid.
      * </pre>
@@ -2476,74 +2403,78 @@ public final class Api {
      */
     int getDataCount();
     /**
-     *
-     *
      * <pre>
      * Key is stat var dcid.
      * </pre>
      *
      * <code>map&lt;string, .org.datacommons.proto.Series&gt; data = 1;</code>
      */
-    boolean containsData(java.lang.String key);
-    /** Use {@link #getDataMap()} instead. */
+    boolean containsData(
+        java.lang.String key);
+    /**
+     * Use {@link #getDataMap()} instead.
+     */
     @java.lang.Deprecated
-    java.util.Map<java.lang.String, org.datacommons.proto.Api.Series> getData();
+    java.util.Map<java.lang.String, org.datacommons.proto.Api.Series>
+    getData();
     /**
-     *
-     *
      * <pre>
      * Key is stat var dcid.
      * </pre>
      *
      * <code>map&lt;string, .org.datacommons.proto.Series&gt; data = 1;</code>
      */
-    java.util.Map<java.lang.String, org.datacommons.proto.Api.Series> getDataMap();
+    java.util.Map<java.lang.String, org.datacommons.proto.Api.Series>
+    getDataMap();
     /**
-     *
-     *
      * <pre>
      * Key is stat var dcid.
      * </pre>
      *
      * <code>map&lt;string, .org.datacommons.proto.Series&gt; data = 1;</code>
      */
+
     org.datacommons.proto.Api.Series getDataOrDefault(
-        java.lang.String key, org.datacommons.proto.Api.Series defaultValue);
+        java.lang.String key,
+        org.datacommons.proto.Api.Series defaultValue);
     /**
-     *
-     *
      * <pre>
      * Key is stat var dcid.
      * </pre>
      *
      * <code>map&lt;string, .org.datacommons.proto.Series&gt; data = 1;</code>
      */
-    org.datacommons.proto.Api.Series getDataOrThrow(java.lang.String key);
+
+    org.datacommons.proto.Api.Series getDataOrThrow(
+        java.lang.String key);
   }
-  /** Protobuf type {@code org.datacommons.proto.SeriesMap} */
-  public static final class SeriesMap extends com.google.protobuf.GeneratedMessageV3
-      implements
+  /**
+   * Protobuf type {@code org.datacommons.proto.SeriesMap}
+   */
+  public  static final class SeriesMap extends
+      com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:org.datacommons.proto.SeriesMap)
       SeriesMapOrBuilder {
-    private static final long serialVersionUID = 0L;
+  private static final long serialVersionUID = 0L;
     // Use SeriesMap.newBuilder() to construct.
     private SeriesMap(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
-    private SeriesMap() {}
+    private SeriesMap() {
+    }
 
     @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
       return new SeriesMap();
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
       return this.unknownFields;
     }
-
     private SeriesMap(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -2563,86 +2494,82 @@ public final class Api {
             case 0:
               done = true;
               break;
-            case 10:
-              {
-                if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                  data_ =
-                      com.google.protobuf.MapField.newMapField(DataDefaultEntryHolder.defaultEntry);
-                  mutable_bitField0_ |= 0x00000001;
-                }
-                com.google.protobuf.MapEntry<java.lang.String, org.datacommons.proto.Api.Series>
-                    data__ =
-                        input.readMessage(
-                            DataDefaultEntryHolder.defaultEntry.getParserForType(),
-                            extensionRegistry);
-                data_.getMutableMap().put(data__.getKey(), data__.getValue());
-                break;
+            case 10: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                data_ = com.google.protobuf.MapField.newMapField(
+                    DataDefaultEntryHolder.defaultEntry);
+                mutable_bitField0_ |= 0x00000001;
               }
-            default:
-              {
-                if (!parseUnknownField(input, unknownFields, extensionRegistry, tag)) {
-                  done = true;
-                }
-                break;
+              com.google.protobuf.MapEntry<java.lang.String, org.datacommons.proto.Api.Series>
+              data__ = input.readMessage(
+                  DataDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              data_.getMutableMap().put(
+                  data__.getKey(), data__.getValue());
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
               }
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(e).setUnfinishedMessage(this);
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
       } finally {
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
     }
-
-    public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
       return org.datacommons.proto.Api.internal_static_org_datacommons_proto_SeriesMap_descriptor;
     }
 
     @SuppressWarnings({"rawtypes"})
     @java.lang.Override
-    protected com.google.protobuf.MapField internalGetMapField(int number) {
+    protected com.google.protobuf.MapField internalGetMapField(
+        int number) {
       switch (number) {
         case 1:
           return internalGetData();
         default:
-          throw new RuntimeException("Invalid map field number: " + number);
+          throw new RuntimeException(
+              "Invalid map field number: " + number);
       }
     }
-
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.datacommons.proto.Api
-          .internal_static_org_datacommons_proto_SeriesMap_fieldAccessorTable
+      return org.datacommons.proto.Api.internal_static_org_datacommons_proto_SeriesMap_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.datacommons.proto.Api.SeriesMap.class,
-              org.datacommons.proto.Api.SeriesMap.Builder.class);
+              org.datacommons.proto.Api.SeriesMap.class, org.datacommons.proto.Api.SeriesMap.Builder.class);
     }
 
     public static final int DATA_FIELD_NUMBER = 1;
-
     private static final class DataDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<java.lang.String, org.datacommons.proto.Api.Series>
-          defaultEntry =
+      static final com.google.protobuf.MapEntry<
+          java.lang.String, org.datacommons.proto.Api.Series> defaultEntry =
               com.google.protobuf.MapEntry
-                  .<java.lang.String, org.datacommons.proto.Api.Series>newDefaultInstance(
-                      org.datacommons.proto.Api
-                          .internal_static_org_datacommons_proto_SeriesMap_DataEntry_descriptor,
-                      com.google.protobuf.WireFormat.FieldType.STRING,
-                      "",
-                      com.google.protobuf.WireFormat.FieldType.MESSAGE,
-                      org.datacommons.proto.Api.Series.getDefaultInstance());
+              .<java.lang.String, org.datacommons.proto.Api.Series>newDefaultInstance(
+                  org.datacommons.proto.Api.internal_static_org_datacommons_proto_SeriesMap_DataEntry_descriptor, 
+                  com.google.protobuf.WireFormat.FieldType.STRING,
+                  "",
+                  com.google.protobuf.WireFormat.FieldType.MESSAGE,
+                  org.datacommons.proto.Api.Series.getDefaultInstance());
     }
-
-    private com.google.protobuf.MapField<java.lang.String, org.datacommons.proto.Api.Series> data_;
-
+    private com.google.protobuf.MapField<
+        java.lang.String, org.datacommons.proto.Api.Series> data_;
     private com.google.protobuf.MapField<java.lang.String, org.datacommons.proto.Api.Series>
-        internalGetData() {
+    internalGetData() {
       if (data_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(DataDefaultEntryHolder.defaultEntry);
+        return com.google.protobuf.MapField.emptyMapField(
+            DataDefaultEntryHolder.defaultEntry);
       }
       return data_;
     }
@@ -2651,68 +2578,63 @@ public final class Api {
       return internalGetData().getMap().size();
     }
     /**
-     *
-     *
      * <pre>
      * Key is stat var dcid.
      * </pre>
      *
      * <code>map&lt;string, .org.datacommons.proto.Series&gt; data = 1;</code>
      */
-    public boolean containsData(java.lang.String key) {
-      if (key == null) {
-        throw new java.lang.NullPointerException();
-      }
+
+    public boolean containsData(
+        java.lang.String key) {
+      if (key == null) { throw new java.lang.NullPointerException(); }
       return internalGetData().getMap().containsKey(key);
     }
-    /** Use {@link #getDataMap()} instead. */
+    /**
+     * Use {@link #getDataMap()} instead.
+     */
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, org.datacommons.proto.Api.Series> getData() {
       return getDataMap();
     }
     /**
-     *
-     *
      * <pre>
      * Key is stat var dcid.
      * </pre>
      *
      * <code>map&lt;string, .org.datacommons.proto.Series&gt; data = 1;</code>
      */
+
     public java.util.Map<java.lang.String, org.datacommons.proto.Api.Series> getDataMap() {
       return internalGetData().getMap();
     }
     /**
-     *
-     *
      * <pre>
      * Key is stat var dcid.
      * </pre>
      *
      * <code>map&lt;string, .org.datacommons.proto.Series&gt; data = 1;</code>
      */
+
     public org.datacommons.proto.Api.Series getDataOrDefault(
-        java.lang.String key, org.datacommons.proto.Api.Series defaultValue) {
-      if (key == null) {
-        throw new java.lang.NullPointerException();
-      }
+        java.lang.String key,
+        org.datacommons.proto.Api.Series defaultValue) {
+      if (key == null) { throw new java.lang.NullPointerException(); }
       java.util.Map<java.lang.String, org.datacommons.proto.Api.Series> map =
           internalGetData().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     *
-     *
      * <pre>
      * Key is stat var dcid.
      * </pre>
      *
      * <code>map&lt;string, .org.datacommons.proto.Series&gt; data = 1;</code>
      */
-    public org.datacommons.proto.Api.Series getDataOrThrow(java.lang.String key) {
-      if (key == null) {
-        throw new java.lang.NullPointerException();
-      }
+
+    public org.datacommons.proto.Api.Series getDataOrThrow(
+        java.lang.String key) {
+      if (key == null) { throw new java.lang.NullPointerException(); }
       java.util.Map<java.lang.String, org.datacommons.proto.Api.Series> map =
           internalGetData().getMap();
       if (!map.containsKey(key)) {
@@ -2722,7 +2644,6 @@ public final class Api {
     }
 
     private byte memoizedIsInitialized = -1;
-
     @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -2734,9 +2655,14 @@ public final class Api {
     }
 
     @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      com.google.protobuf.GeneratedMessageV3.serializeStringMapTo(
-          output, internalGetData(), DataDefaultEntryHolder.defaultEntry, 1);
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      com.google.protobuf.GeneratedMessageV3
+        .serializeStringMapTo(
+          output,
+          internalGetData(),
+          DataDefaultEntryHolder.defaultEntry,
+          1);
       unknownFields.writeTo(output);
     }
 
@@ -2746,15 +2672,15 @@ public final class Api {
       if (size != -1) return size;
 
       size = 0;
-      for (java.util.Map.Entry<java.lang.String, org.datacommons.proto.Api.Series> entry :
-          internalGetData().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.String, org.datacommons.proto.Api.Series> data__ =
-            DataDefaultEntryHolder.defaultEntry
-                .newBuilderForType()
-                .setKey(entry.getKey())
-                .setValue(entry.getValue())
-                .build();
-        size += com.google.protobuf.CodedOutputStream.computeMessageSize(1, data__);
+      for (java.util.Map.Entry<java.lang.String, org.datacommons.proto.Api.Series> entry
+           : internalGetData().getMap().entrySet()) {
+        com.google.protobuf.MapEntry<java.lang.String, org.datacommons.proto.Api.Series>
+        data__ = DataDefaultEntryHolder.defaultEntry.newBuilderForType()
+            .setKey(entry.getKey())
+            .setValue(entry.getValue())
+            .build();
+        size += com.google.protobuf.CodedOutputStream
+            .computeMessageSize(1, data__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -2764,14 +2690,15 @@ public final class Api {
     @java.lang.Override
     public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
-        return true;
+       return true;
       }
       if (!(obj instanceof org.datacommons.proto.Api.SeriesMap)) {
         return super.equals(obj);
       }
       org.datacommons.proto.Api.SeriesMap other = (org.datacommons.proto.Api.SeriesMap) obj;
 
-      if (!internalGetData().equals(other.internalGetData())) return false;
+      if (!internalGetData().equals(
+          other.internalGetData())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -2792,93 +2719,88 @@ public final class Api {
       return hash;
     }
 
-    public static org.datacommons.proto.Api.SeriesMap parseFrom(java.nio.ByteBuffer data)
+    public static org.datacommons.proto.Api.SeriesMap parseFrom(
+        java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-
     public static org.datacommons.proto.Api.SeriesMap parseFrom(
-        java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-
-    public static org.datacommons.proto.Api.SeriesMap parseFrom(com.google.protobuf.ByteString data)
+    public static org.datacommons.proto.Api.SeriesMap parseFrom(
+        com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-
     public static org.datacommons.proto.Api.SeriesMap parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-
     public static org.datacommons.proto.Api.SeriesMap parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-
     public static org.datacommons.proto.Api.SeriesMap parseFrom(
-        byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-
     public static org.datacommons.proto.Api.SeriesMap parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
     }
-
     public static org.datacommons.proto.Api.SeriesMap parseFrom(
-        java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-          PARSER, input, extensionRegistry);
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
     public static org.datacommons.proto.Api.SeriesMap parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
     }
-
     public static org.datacommons.proto.Api.SeriesMap parseDelimitedFrom(
-        java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
-          PARSER, input, extensionRegistry);
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-
     public static org.datacommons.proto.Api.SeriesMap parseFrom(
-        com.google.protobuf.CodedInputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
     }
-
     public static org.datacommons.proto.Api.SeriesMap parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-          PARSER, input, extensionRegistry);
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
+    public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-
     public static Builder newBuilder(org.datacommons.proto.Api.SeriesMap prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-
     @java.lang.Override
     public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
     }
 
     @java.lang.Override
@@ -2887,44 +2809,46 @@ public final class Api {
       Builder builder = new Builder(parent);
       return builder;
     }
-    /** Protobuf type {@code org.datacommons.proto.SeriesMap} */
-    public static final class Builder
-        extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
-        implements
+    /**
+     * Protobuf type {@code org.datacommons.proto.SeriesMap}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:org.datacommons.proto.SeriesMap)
         org.datacommons.proto.Api.SeriesMapOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
         return org.datacommons.proto.Api.internal_static_org_datacommons_proto_SeriesMap_descriptor;
       }
 
       @SuppressWarnings({"rawtypes"})
-      protected com.google.protobuf.MapField internalGetMapField(int number) {
+      protected com.google.protobuf.MapField internalGetMapField(
+          int number) {
         switch (number) {
           case 1:
             return internalGetData();
           default:
-            throw new RuntimeException("Invalid map field number: " + number);
+            throw new RuntimeException(
+                "Invalid map field number: " + number);
         }
       }
-
       @SuppressWarnings({"rawtypes"})
-      protected com.google.protobuf.MapField internalGetMutableMapField(int number) {
+      protected com.google.protobuf.MapField internalGetMutableMapField(
+          int number) {
         switch (number) {
           case 1:
             return internalGetMutableData();
           default:
-            throw new RuntimeException("Invalid map field number: " + number);
+            throw new RuntimeException(
+                "Invalid map field number: " + number);
         }
       }
-
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.datacommons.proto.Api
-            .internal_static_org_datacommons_proto_SeriesMap_fieldAccessorTable
+        return org.datacommons.proto.Api.internal_static_org_datacommons_proto_SeriesMap_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.datacommons.proto.Api.SeriesMap.class,
-                org.datacommons.proto.Api.SeriesMap.Builder.class);
+                org.datacommons.proto.Api.SeriesMap.class, org.datacommons.proto.Api.SeriesMap.Builder.class);
       }
 
       // Construct using org.datacommons.proto.Api.SeriesMap.newBuilder()
@@ -2932,15 +2856,16 @@ public final class Api {
         maybeForceBuilderInitialization();
       }
 
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
-
       private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders) {}
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
       }
-
       @java.lang.Override
       public Builder clear() {
         super.clear();
@@ -2949,7 +2874,8 @@ public final class Api {
       }
 
       @java.lang.Override
-      public com.google.protobuf.Descriptors.Descriptor getDescriptorForType() {
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
         return org.datacommons.proto.Api.internal_static_org_datacommons_proto_SeriesMap_descriptor;
       }
 
@@ -2981,41 +2907,38 @@ public final class Api {
       public Builder clone() {
         return super.clone();
       }
-
       @java.lang.Override
       public Builder setField(
-          com.google.protobuf.Descriptors.FieldDescriptor field, java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
         return super.setField(field, value);
       }
-
       @java.lang.Override
-      public Builder clearField(com.google.protobuf.Descriptors.FieldDescriptor field) {
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-
       @java.lang.Override
-      public Builder clearOneof(com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-
       @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index,
-          java.lang.Object value) {
+          int index, java.lang.Object value) {
         return super.setRepeatedField(field, index, value);
       }
-
       @java.lang.Override
       public Builder addRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field, java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof org.datacommons.proto.Api.SeriesMap) {
-          return mergeFrom((org.datacommons.proto.Api.SeriesMap) other);
+          return mergeFrom((org.datacommons.proto.Api.SeriesMap)other);
         } else {
           super.mergeFrom(other);
           return this;
@@ -3024,7 +2947,8 @@ public final class Api {
 
       public Builder mergeFrom(org.datacommons.proto.Api.SeriesMap other) {
         if (other == org.datacommons.proto.Api.SeriesMap.getDefaultInstance()) return this;
-        internalGetMutableData().mergeFrom(other.internalGetData());
+        internalGetMutableData().mergeFrom(
+            other.internalGetData());
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -3053,26 +2977,24 @@ public final class Api {
         }
         return this;
       }
-
       private int bitField0_;
 
+      private com.google.protobuf.MapField<
+          java.lang.String, org.datacommons.proto.Api.Series> data_;
       private com.google.protobuf.MapField<java.lang.String, org.datacommons.proto.Api.Series>
-          data_;
-
-      private com.google.protobuf.MapField<java.lang.String, org.datacommons.proto.Api.Series>
-          internalGetData() {
+      internalGetData() {
         if (data_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(DataDefaultEntryHolder.defaultEntry);
+          return com.google.protobuf.MapField.emptyMapField(
+              DataDefaultEntryHolder.defaultEntry);
         }
         return data_;
       }
-
       private com.google.protobuf.MapField<java.lang.String, org.datacommons.proto.Api.Series>
-          internalGetMutableData() {
-        onChanged();
-        ;
+      internalGetMutableData() {
+        onChanged();;
         if (data_ == null) {
-          data_ = com.google.protobuf.MapField.newMapField(DataDefaultEntryHolder.defaultEntry);
+          data_ = com.google.protobuf.MapField.newMapField(
+              DataDefaultEntryHolder.defaultEntry);
         }
         if (!data_.isMutable()) {
           data_ = data_.copy();
@@ -3084,68 +3006,63 @@ public final class Api {
         return internalGetData().getMap().size();
       }
       /**
-       *
-       *
        * <pre>
        * Key is stat var dcid.
        * </pre>
        *
        * <code>map&lt;string, .org.datacommons.proto.Series&gt; data = 1;</code>
        */
-      public boolean containsData(java.lang.String key) {
-        if (key == null) {
-          throw new java.lang.NullPointerException();
-        }
+
+      public boolean containsData(
+          java.lang.String key) {
+        if (key == null) { throw new java.lang.NullPointerException(); }
         return internalGetData().getMap().containsKey(key);
       }
-      /** Use {@link #getDataMap()} instead. */
+      /**
+       * Use {@link #getDataMap()} instead.
+       */
       @java.lang.Deprecated
       public java.util.Map<java.lang.String, org.datacommons.proto.Api.Series> getData() {
         return getDataMap();
       }
       /**
-       *
-       *
        * <pre>
        * Key is stat var dcid.
        * </pre>
        *
        * <code>map&lt;string, .org.datacommons.proto.Series&gt; data = 1;</code>
        */
+
       public java.util.Map<java.lang.String, org.datacommons.proto.Api.Series> getDataMap() {
         return internalGetData().getMap();
       }
       /**
-       *
-       *
        * <pre>
        * Key is stat var dcid.
        * </pre>
        *
        * <code>map&lt;string, .org.datacommons.proto.Series&gt; data = 1;</code>
        */
+
       public org.datacommons.proto.Api.Series getDataOrDefault(
-          java.lang.String key, org.datacommons.proto.Api.Series defaultValue) {
-        if (key == null) {
-          throw new java.lang.NullPointerException();
-        }
+          java.lang.String key,
+          org.datacommons.proto.Api.Series defaultValue) {
+        if (key == null) { throw new java.lang.NullPointerException(); }
         java.util.Map<java.lang.String, org.datacommons.proto.Api.Series> map =
             internalGetData().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       *
-       *
        * <pre>
        * Key is stat var dcid.
        * </pre>
        *
        * <code>map&lt;string, .org.datacommons.proto.Series&gt; data = 1;</code>
        */
-      public org.datacommons.proto.Api.Series getDataOrThrow(java.lang.String key) {
-        if (key == null) {
-          throw new java.lang.NullPointerException();
-        }
+
+      public org.datacommons.proto.Api.Series getDataOrThrow(
+          java.lang.String key) {
+        if (key == null) { throw new java.lang.NullPointerException(); }
         java.util.Map<java.lang.String, org.datacommons.proto.Api.Series> map =
             internalGetData().getMap();
         if (!map.containsKey(key)) {
@@ -3155,64 +3072,63 @@ public final class Api {
       }
 
       public Builder clearData() {
-        internalGetMutableData().getMutableMap().clear();
+        internalGetMutableData().getMutableMap()
+            .clear();
         return this;
       }
       /**
-       *
-       *
        * <pre>
        * Key is stat var dcid.
        * </pre>
        *
        * <code>map&lt;string, .org.datacommons.proto.Series&gt; data = 1;</code>
        */
-      public Builder removeData(java.lang.String key) {
-        if (key == null) {
-          throw new java.lang.NullPointerException();
-        }
-        internalGetMutableData().getMutableMap().remove(key);
+
+      public Builder removeData(
+          java.lang.String key) {
+        if (key == null) { throw new java.lang.NullPointerException(); }
+        internalGetMutableData().getMutableMap()
+            .remove(key);
         return this;
       }
-      /** Use alternate mutation accessors instead. */
+      /**
+       * Use alternate mutation accessors instead.
+       */
       @java.lang.Deprecated
-      public java.util.Map<java.lang.String, org.datacommons.proto.Api.Series> getMutableData() {
+      public java.util.Map<java.lang.String, org.datacommons.proto.Api.Series>
+      getMutableData() {
         return internalGetMutableData().getMutableMap();
       }
       /**
-       *
-       *
        * <pre>
        * Key is stat var dcid.
        * </pre>
        *
        * <code>map&lt;string, .org.datacommons.proto.Series&gt; data = 1;</code>
        */
-      public Builder putData(java.lang.String key, org.datacommons.proto.Api.Series value) {
-        if (key == null) {
-          throw new java.lang.NullPointerException();
-        }
-        if (value == null) {
-          throw new java.lang.NullPointerException();
-        }
-        internalGetMutableData().getMutableMap().put(key, value);
+      public Builder putData(
+          java.lang.String key,
+          org.datacommons.proto.Api.Series value) {
+        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (value == null) { throw new java.lang.NullPointerException(); }
+        internalGetMutableData().getMutableMap()
+            .put(key, value);
         return this;
       }
       /**
-       *
-       *
        * <pre>
        * Key is stat var dcid.
        * </pre>
        *
        * <code>map&lt;string, .org.datacommons.proto.Series&gt; data = 1;</code>
        */
+
       public Builder putAllData(
           java.util.Map<java.lang.String, org.datacommons.proto.Api.Series> values) {
-        internalGetMutableData().getMutableMap().putAll(values);
+        internalGetMutableData().getMutableMap()
+            .putAll(values);
         return this;
       }
-
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -3225,12 +3141,12 @@ public final class Api {
         return super.mergeUnknownFields(unknownFields);
       }
 
+
       // @@protoc_insertion_point(builder_scope:org.datacommons.proto.SeriesMap)
     }
 
     // @@protoc_insertion_point(class_scope:org.datacommons.proto.SeriesMap)
     private static final org.datacommons.proto.Api.SeriesMap DEFAULT_INSTANCE;
-
     static {
       DEFAULT_INSTANCE = new org.datacommons.proto.Api.SeriesMap();
     }
@@ -3239,16 +3155,16 @@ public final class Api {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<SeriesMap> PARSER =
-        new com.google.protobuf.AbstractParser<SeriesMap>() {
-          @java.lang.Override
-          public SeriesMap parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new SeriesMap(input, extensionRegistry);
-          }
-        };
+    private static final com.google.protobuf.Parser<SeriesMap>
+        PARSER = new com.google.protobuf.AbstractParser<SeriesMap>() {
+      @java.lang.Override
+      public SeriesMap parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new SeriesMap(input, extensionRegistry);
+      }
+    };
 
     public static com.google.protobuf.Parser<SeriesMap> parser() {
       return PARSER;
@@ -3263,1941 +3179,14 @@ public final class Api {
     public org.datacommons.proto.Api.SeriesMap getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
+
   }
 
-  public interface GetStatAllResponseOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:org.datacommons.proto.GetStatAllResponse)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     *
-     *
-     * <pre>
-     * Key is place dcid.
-     * </pre>
-     *
-     * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; place_data = 1;</code>
-     */
-    int getPlaceDataCount();
-    /**
-     *
-     *
-     * <pre>
-     * Key is place dcid.
-     * </pre>
-     *
-     * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; place_data = 1;</code>
-     */
-    boolean containsPlaceData(java.lang.String key);
-    /** Use {@link #getPlaceDataMap()} instead. */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.String, org.datacommons.proto.Api.SeriesMap> getPlaceData();
-    /**
-     *
-     *
-     * <pre>
-     * Key is place dcid.
-     * </pre>
-     *
-     * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; place_data = 1;</code>
-     */
-    java.util.Map<java.lang.String, org.datacommons.proto.Api.SeriesMap> getPlaceDataMap();
-    /**
-     *
-     *
-     * <pre>
-     * Key is place dcid.
-     * </pre>
-     *
-     * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; place_data = 1;</code>
-     */
-    org.datacommons.proto.Api.SeriesMap getPlaceDataOrDefault(
-        java.lang.String key, org.datacommons.proto.Api.SeriesMap defaultValue);
-    /**
-     *
-     *
-     * <pre>
-     * Key is place dcid.
-     * </pre>
-     *
-     * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; place_data = 1;</code>
-     */
-    org.datacommons.proto.Api.SeriesMap getPlaceDataOrThrow(java.lang.String key);
-  }
-  /** Protobuf type {@code org.datacommons.proto.GetStatAllResponse} */
-  public static final class GetStatAllResponse extends com.google.protobuf.GeneratedMessageV3
-      implements
-      // @@protoc_insertion_point(message_implements:org.datacommons.proto.GetStatAllResponse)
-      GetStatAllResponseOrBuilder {
-    private static final long serialVersionUID = 0L;
-    // Use GetStatAllResponse.newBuilder() to construct.
-    private GetStatAllResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-      super(builder);
-    }
-
-    private GetStatAllResponse() {}
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new GetStatAllResponse();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
-
-    private GetStatAllResponse(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 10:
-              {
-                if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                  placeData_ =
-                      com.google.protobuf.MapField.newMapField(
-                          PlaceDataDefaultEntryHolder.defaultEntry);
-                  mutable_bitField0_ |= 0x00000001;
-                }
-                com.google.protobuf.MapEntry<java.lang.String, org.datacommons.proto.Api.SeriesMap>
-                    placeData__ =
-                        input.readMessage(
-                            PlaceDataDefaultEntryHolder.defaultEntry.getParserForType(),
-                            extensionRegistry);
-                placeData_.getMutableMap().put(placeData__.getKey(), placeData__.getValue());
-                break;
-              }
-            default:
-              {
-                if (!parseUnknownField(input, unknownFields, extensionRegistry, tag)) {
-                  done = true;
-                }
-                break;
-              }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-
-    public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
-      return org.datacommons.proto.Api
-          .internal_static_org_datacommons_proto_GetStatAllResponse_descriptor;
-    }
-
-    @SuppressWarnings({"rawtypes"})
-    @java.lang.Override
-    protected com.google.protobuf.MapField internalGetMapField(int number) {
-      switch (number) {
-        case 1:
-          return internalGetPlaceData();
-        default:
-          throw new RuntimeException("Invalid map field number: " + number);
-      }
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return org.datacommons.proto.Api
-          .internal_static_org_datacommons_proto_GetStatAllResponse_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              org.datacommons.proto.Api.GetStatAllResponse.class,
-              org.datacommons.proto.Api.GetStatAllResponse.Builder.class);
-    }
-
-    public static final int PLACE_DATA_FIELD_NUMBER = 1;
-
-    private static final class PlaceDataDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<
-              java.lang.String, org.datacommons.proto.Api.SeriesMap>
-          defaultEntry =
-              com.google.protobuf.MapEntry
-                  .<java.lang.String, org.datacommons.proto.Api.SeriesMap>newDefaultInstance(
-                      org.datacommons.proto.Api
-                          .internal_static_org_datacommons_proto_GetStatAllResponse_PlaceDataEntry_descriptor,
-                      com.google.protobuf.WireFormat.FieldType.STRING,
-                      "",
-                      com.google.protobuf.WireFormat.FieldType.MESSAGE,
-                      org.datacommons.proto.Api.SeriesMap.getDefaultInstance());
-    }
-
-    private com.google.protobuf.MapField<java.lang.String, org.datacommons.proto.Api.SeriesMap>
-        placeData_;
-
-    private com.google.protobuf.MapField<java.lang.String, org.datacommons.proto.Api.SeriesMap>
-        internalGetPlaceData() {
-      if (placeData_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(PlaceDataDefaultEntryHolder.defaultEntry);
-      }
-      return placeData_;
-    }
-
-    public int getPlaceDataCount() {
-      return internalGetPlaceData().getMap().size();
-    }
-    /**
-     *
-     *
-     * <pre>
-     * Key is place dcid.
-     * </pre>
-     *
-     * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; place_data = 1;</code>
-     */
-    public boolean containsPlaceData(java.lang.String key) {
-      if (key == null) {
-        throw new java.lang.NullPointerException();
-      }
-      return internalGetPlaceData().getMap().containsKey(key);
-    }
-    /** Use {@link #getPlaceDataMap()} instead. */
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.String, org.datacommons.proto.Api.SeriesMap> getPlaceData() {
-      return getPlaceDataMap();
-    }
-    /**
-     *
-     *
-     * <pre>
-     * Key is place dcid.
-     * </pre>
-     *
-     * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; place_data = 1;</code>
-     */
-    public java.util.Map<java.lang.String, org.datacommons.proto.Api.SeriesMap> getPlaceDataMap() {
-      return internalGetPlaceData().getMap();
-    }
-    /**
-     *
-     *
-     * <pre>
-     * Key is place dcid.
-     * </pre>
-     *
-     * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; place_data = 1;</code>
-     */
-    public org.datacommons.proto.Api.SeriesMap getPlaceDataOrDefault(
-        java.lang.String key, org.datacommons.proto.Api.SeriesMap defaultValue) {
-      if (key == null) {
-        throw new java.lang.NullPointerException();
-      }
-      java.util.Map<java.lang.String, org.datacommons.proto.Api.SeriesMap> map =
-          internalGetPlaceData().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
-    }
-    /**
-     *
-     *
-     * <pre>
-     * Key is place dcid.
-     * </pre>
-     *
-     * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; place_data = 1;</code>
-     */
-    public org.datacommons.proto.Api.SeriesMap getPlaceDataOrThrow(java.lang.String key) {
-      if (key == null) {
-        throw new java.lang.NullPointerException();
-      }
-      java.util.Map<java.lang.String, org.datacommons.proto.Api.SeriesMap> map =
-          internalGetPlaceData().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      com.google.protobuf.GeneratedMessageV3.serializeStringMapTo(
-          output, internalGetPlaceData(), PlaceDataDefaultEntryHolder.defaultEntry, 1);
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      for (java.util.Map.Entry<java.lang.String, org.datacommons.proto.Api.SeriesMap> entry :
-          internalGetPlaceData().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.String, org.datacommons.proto.Api.SeriesMap>
-            placeData__ =
-                PlaceDataDefaultEntryHolder.defaultEntry
-                    .newBuilderForType()
-                    .setKey(entry.getKey())
-                    .setValue(entry.getValue())
-                    .build();
-        size += com.google.protobuf.CodedOutputStream.computeMessageSize(1, placeData__);
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj instanceof org.datacommons.proto.Api.GetStatAllResponse)) {
-        return super.equals(obj);
-      }
-      org.datacommons.proto.Api.GetStatAllResponse other =
-          (org.datacommons.proto.Api.GetStatAllResponse) obj;
-
-      if (!internalGetPlaceData().equals(other.internalGetPlaceData())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      if (!internalGetPlaceData().getMap().isEmpty()) {
-        hash = (37 * hash) + PLACE_DATA_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetPlaceData().hashCode();
-      }
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
-    }
-
-    public static org.datacommons.proto.Api.GetStatAllResponse parseFrom(java.nio.ByteBuffer data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-
-    public static org.datacommons.proto.Api.GetStatAllResponse parseFrom(
-        java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-
-    public static org.datacommons.proto.Api.GetStatAllResponse parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-
-    public static org.datacommons.proto.Api.GetStatAllResponse parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-
-    public static org.datacommons.proto.Api.GetStatAllResponse parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-
-    public static org.datacommons.proto.Api.GetStatAllResponse parseFrom(
-        byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-
-    public static org.datacommons.proto.Api.GetStatAllResponse parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
-    }
-
-    public static org.datacommons.proto.Api.GetStatAllResponse parseFrom(
-        java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-          PARSER, input, extensionRegistry);
-    }
-
-    public static org.datacommons.proto.Api.GetStatAllResponse parseDelimitedFrom(
-        java.io.InputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
-    }
-
-    public static org.datacommons.proto.Api.GetStatAllResponse parseDelimitedFrom(
-        java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
-          PARSER, input, extensionRegistry);
-    }
-
-    public static org.datacommons.proto.Api.GetStatAllResponse parseFrom(
-        com.google.protobuf.CodedInputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
-    }
-
-    public static org.datacommons.proto.Api.GetStatAllResponse parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-          PARSER, input, extensionRegistry);
-    }
-
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-
-    public static Builder newBuilder(org.datacommons.proto.Api.GetStatAllResponse prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
-
-    @java.lang.Override
-    public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
-    }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /** Protobuf type {@code org.datacommons.proto.GetStatAllResponse} */
-    public static final class Builder
-        extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
-        implements
-        // @@protoc_insertion_point(builder_implements:org.datacommons.proto.GetStatAllResponse)
-        org.datacommons.proto.Api.GetStatAllResponseOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
-        return org.datacommons.proto.Api
-            .internal_static_org_datacommons_proto_GetStatAllResponse_descriptor;
-      }
-
-      @SuppressWarnings({"rawtypes"})
-      protected com.google.protobuf.MapField internalGetMapField(int number) {
-        switch (number) {
-          case 1:
-            return internalGetPlaceData();
-          default:
-            throw new RuntimeException("Invalid map field number: " + number);
-        }
-      }
-
-      @SuppressWarnings({"rawtypes"})
-      protected com.google.protobuf.MapField internalGetMutableMapField(int number) {
-        switch (number) {
-          case 1:
-            return internalGetMutablePlaceData();
-          default:
-            throw new RuntimeException("Invalid map field number: " + number);
-        }
-      }
-
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return org.datacommons.proto.Api
-            .internal_static_org_datacommons_proto_GetStatAllResponse_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                org.datacommons.proto.Api.GetStatAllResponse.class,
-                org.datacommons.proto.Api.GetStatAllResponse.Builder.class);
-      }
-
-      // Construct using org.datacommons.proto.Api.GetStatAllResponse.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders) {}
-      }
-
-      @java.lang.Override
-      public Builder clear() {
-        super.clear();
-        internalGetMutablePlaceData().clear();
-        return this;
-      }
-
-      @java.lang.Override
-      public com.google.protobuf.Descriptors.Descriptor getDescriptorForType() {
-        return org.datacommons.proto.Api
-            .internal_static_org_datacommons_proto_GetStatAllResponse_descriptor;
-      }
-
-      @java.lang.Override
-      public org.datacommons.proto.Api.GetStatAllResponse getDefaultInstanceForType() {
-        return org.datacommons.proto.Api.GetStatAllResponse.getDefaultInstance();
-      }
-
-      @java.lang.Override
-      public org.datacommons.proto.Api.GetStatAllResponse build() {
-        org.datacommons.proto.Api.GetStatAllResponse result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      @java.lang.Override
-      public org.datacommons.proto.Api.GetStatAllResponse buildPartial() {
-        org.datacommons.proto.Api.GetStatAllResponse result =
-            new org.datacommons.proto.Api.GetStatAllResponse(this);
-        int from_bitField0_ = bitField0_;
-        result.placeData_ = internalGetPlaceData();
-        result.placeData_.makeImmutable();
-        onBuilt();
-        return result;
-      }
-
-      @java.lang.Override
-      public Builder clone() {
-        return super.clone();
-      }
-
-      @java.lang.Override
-      public Builder setField(
-          com.google.protobuf.Descriptors.FieldDescriptor field, java.lang.Object value) {
-        return super.setField(field, value);
-      }
-
-      @java.lang.Override
-      public Builder clearField(com.google.protobuf.Descriptors.FieldDescriptor field) {
-        return super.clearField(field);
-      }
-
-      @java.lang.Override
-      public Builder clearOneof(com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-        return super.clearOneof(oneof);
-      }
-
-      @java.lang.Override
-      public Builder setRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index,
-          java.lang.Object value) {
-        return super.setRepeatedField(field, index, value);
-      }
-
-      @java.lang.Override
-      public Builder addRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field, java.lang.Object value) {
-        return super.addRepeatedField(field, value);
-      }
-
-      @java.lang.Override
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.datacommons.proto.Api.GetStatAllResponse) {
-          return mergeFrom((org.datacommons.proto.Api.GetStatAllResponse) other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(org.datacommons.proto.Api.GetStatAllResponse other) {
-        if (other == org.datacommons.proto.Api.GetStatAllResponse.getDefaultInstance()) return this;
-        internalGetMutablePlaceData().mergeFrom(other.internalGetPlaceData());
-        this.mergeUnknownFields(other.unknownFields);
-        onChanged();
-        return this;
-      }
-
-      @java.lang.Override
-      public final boolean isInitialized() {
-        return true;
-      }
-
-      @java.lang.Override
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        org.datacommons.proto.Api.GetStatAllResponse parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (org.datacommons.proto.Api.GetStatAllResponse) e.getUnfinishedMessage();
-          throw e.unwrapIOException();
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-
-      private int bitField0_;
-
-      private com.google.protobuf.MapField<java.lang.String, org.datacommons.proto.Api.SeriesMap>
-          placeData_;
-
-      private com.google.protobuf.MapField<java.lang.String, org.datacommons.proto.Api.SeriesMap>
-          internalGetPlaceData() {
-        if (placeData_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              PlaceDataDefaultEntryHolder.defaultEntry);
-        }
-        return placeData_;
-      }
-
-      private com.google.protobuf.MapField<java.lang.String, org.datacommons.proto.Api.SeriesMap>
-          internalGetMutablePlaceData() {
-        onChanged();
-        ;
-        if (placeData_ == null) {
-          placeData_ =
-              com.google.protobuf.MapField.newMapField(PlaceDataDefaultEntryHolder.defaultEntry);
-        }
-        if (!placeData_.isMutable()) {
-          placeData_ = placeData_.copy();
-        }
-        return placeData_;
-      }
-
-      public int getPlaceDataCount() {
-        return internalGetPlaceData().getMap().size();
-      }
-      /**
-       *
-       *
-       * <pre>
-       * Key is place dcid.
-       * </pre>
-       *
-       * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; place_data = 1;</code>
-       */
-      public boolean containsPlaceData(java.lang.String key) {
-        if (key == null) {
-          throw new java.lang.NullPointerException();
-        }
-        return internalGetPlaceData().getMap().containsKey(key);
-      }
-      /** Use {@link #getPlaceDataMap()} instead. */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.String, org.datacommons.proto.Api.SeriesMap> getPlaceData() {
-        return getPlaceDataMap();
-      }
-      /**
-       *
-       *
-       * <pre>
-       * Key is place dcid.
-       * </pre>
-       *
-       * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; place_data = 1;</code>
-       */
-      public java.util.Map<java.lang.String, org.datacommons.proto.Api.SeriesMap>
-          getPlaceDataMap() {
-        return internalGetPlaceData().getMap();
-      }
-      /**
-       *
-       *
-       * <pre>
-       * Key is place dcid.
-       * </pre>
-       *
-       * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; place_data = 1;</code>
-       */
-      public org.datacommons.proto.Api.SeriesMap getPlaceDataOrDefault(
-          java.lang.String key, org.datacommons.proto.Api.SeriesMap defaultValue) {
-        if (key == null) {
-          throw new java.lang.NullPointerException();
-        }
-        java.util.Map<java.lang.String, org.datacommons.proto.Api.SeriesMap> map =
-            internalGetPlaceData().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       *
-       *
-       * <pre>
-       * Key is place dcid.
-       * </pre>
-       *
-       * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; place_data = 1;</code>
-       */
-      public org.datacommons.proto.Api.SeriesMap getPlaceDataOrThrow(java.lang.String key) {
-        if (key == null) {
-          throw new java.lang.NullPointerException();
-        }
-        java.util.Map<java.lang.String, org.datacommons.proto.Api.SeriesMap> map =
-            internalGetPlaceData().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return map.get(key);
-      }
-
-      public Builder clearPlaceData() {
-        internalGetMutablePlaceData().getMutableMap().clear();
-        return this;
-      }
-      /**
-       *
-       *
-       * <pre>
-       * Key is place dcid.
-       * </pre>
-       *
-       * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; place_data = 1;</code>
-       */
-      public Builder removePlaceData(java.lang.String key) {
-        if (key == null) {
-          throw new java.lang.NullPointerException();
-        }
-        internalGetMutablePlaceData().getMutableMap().remove(key);
-        return this;
-      }
-      /** Use alternate mutation accessors instead. */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.String, org.datacommons.proto.Api.SeriesMap>
-          getMutablePlaceData() {
-        return internalGetMutablePlaceData().getMutableMap();
-      }
-      /**
-       *
-       *
-       * <pre>
-       * Key is place dcid.
-       * </pre>
-       *
-       * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; place_data = 1;</code>
-       */
-      public Builder putPlaceData(java.lang.String key, org.datacommons.proto.Api.SeriesMap value) {
-        if (key == null) {
-          throw new java.lang.NullPointerException();
-        }
-        if (value == null) {
-          throw new java.lang.NullPointerException();
-        }
-        internalGetMutablePlaceData().getMutableMap().put(key, value);
-        return this;
-      }
-      /**
-       *
-       *
-       * <pre>
-       * Key is place dcid.
-       * </pre>
-       *
-       * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; place_data = 1;</code>
-       */
-      public Builder putAllPlaceData(
-          java.util.Map<java.lang.String, org.datacommons.proto.Api.SeriesMap> values) {
-        internalGetMutablePlaceData().getMutableMap().putAll(values);
-        return this;
-      }
-
-      @java.lang.Override
-      public final Builder setUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.setUnknownFields(unknownFields);
-      }
-
-      @java.lang.Override
-      public final Builder mergeUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.mergeUnknownFields(unknownFields);
-      }
-
-      // @@protoc_insertion_point(builder_scope:org.datacommons.proto.GetStatAllResponse)
-    }
-
-    // @@protoc_insertion_point(class_scope:org.datacommons.proto.GetStatAllResponse)
-    private static final org.datacommons.proto.Api.GetStatAllResponse DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE = new org.datacommons.proto.Api.GetStatAllResponse();
-    }
-
-    public static org.datacommons.proto.Api.GetStatAllResponse getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<GetStatAllResponse> PARSER =
-        new com.google.protobuf.AbstractParser<GetStatAllResponse>() {
-          @java.lang.Override
-          public GetStatAllResponse parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new GetStatAllResponse(input, extensionRegistry);
-          }
-        };
-
-    public static com.google.protobuf.Parser<GetStatAllResponse> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<GetStatAllResponse> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public org.datacommons.proto.Api.GetStatAllResponse getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-  }
-
-  public interface GetStatSetSeriesRequestOrBuilder
-      extends
-      // @@protoc_insertion_point(interface_extends:org.datacommons.proto.GetStatSetSeriesRequest)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     *
-     *
-     * <pre>
-     * The dcids of the place.
-     * </pre>
-     *
-     * <code>repeated string places = 1;</code>
-     *
-     * @return A list containing the places.
-     */
-    java.util.List<java.lang.String> getPlacesList();
-    /**
-     *
-     *
-     * <pre>
-     * The dcids of the place.
-     * </pre>
-     *
-     * <code>repeated string places = 1;</code>
-     *
-     * @return The count of places.
-     */
-    int getPlacesCount();
-    /**
-     *
-     *
-     * <pre>
-     * The dcids of the place.
-     * </pre>
-     *
-     * <code>repeated string places = 1;</code>
-     *
-     * @param index The index of the element to return.
-     * @return The places at the given index.
-     */
-    java.lang.String getPlaces(int index);
-    /**
-     *
-     *
-     * <pre>
-     * The dcids of the place.
-     * </pre>
-     *
-     * <code>repeated string places = 1;</code>
-     *
-     * @param index The index of the value to return.
-     * @return The bytes of the places at the given index.
-     */
-    com.google.protobuf.ByteString getPlacesBytes(int index);
-
-    /**
-     *
-     *
-     * <pre>
-     * The dcids of the statistical variables.
-     * </pre>
-     *
-     * <code>repeated string stat_vars = 2;</code>
-     *
-     * @return A list containing the statVars.
-     */
-    java.util.List<java.lang.String> getStatVarsList();
-    /**
-     *
-     *
-     * <pre>
-     * The dcids of the statistical variables.
-     * </pre>
-     *
-     * <code>repeated string stat_vars = 2;</code>
-     *
-     * @return The count of statVars.
-     */
-    int getStatVarsCount();
-    /**
-     *
-     *
-     * <pre>
-     * The dcids of the statistical variables.
-     * </pre>
-     *
-     * <code>repeated string stat_vars = 2;</code>
-     *
-     * @param index The index of the element to return.
-     * @return The statVars at the given index.
-     */
-    java.lang.String getStatVars(int index);
-    /**
-     *
-     *
-     * <pre>
-     * The dcids of the statistical variables.
-     * </pre>
-     *
-     * <code>repeated string stat_vars = 2;</code>
-     *
-     * @param index The index of the value to return.
-     * @return The bytes of the statVars at the given index.
-     */
-    com.google.protobuf.ByteString getStatVarsBytes(int index);
-  }
-  /**
-   *
-   *
-   * <pre>
-   * Request for GetStatSetSeries API.
-   * </pre>
-   *
-   * Protobuf type {@code org.datacommons.proto.GetStatSetSeriesRequest}
-   */
-  public static final class GetStatSetSeriesRequest extends com.google.protobuf.GeneratedMessageV3
-      implements
-      // @@protoc_insertion_point(message_implements:org.datacommons.proto.GetStatSetSeriesRequest)
-      GetStatSetSeriesRequestOrBuilder {
-    private static final long serialVersionUID = 0L;
-    // Use GetStatSetSeriesRequest.newBuilder() to construct.
-    private GetStatSetSeriesRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-      super(builder);
-    }
-
-    private GetStatSetSeriesRequest() {
-      places_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      statVars_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-    }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
-      return new GetStatSetSeriesRequest();
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
-      return this.unknownFields;
-    }
-
-    private GetStatSetSeriesRequest(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      int mutable_bitField0_ = 0;
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            case 10:
-              {
-                java.lang.String s = input.readStringRequireUtf8();
-                if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                  places_ = new com.google.protobuf.LazyStringArrayList();
-                  mutable_bitField0_ |= 0x00000001;
-                }
-                places_.add(s);
-                break;
-              }
-            case 18:
-              {
-                java.lang.String s = input.readStringRequireUtf8();
-                if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                  statVars_ = new com.google.protobuf.LazyStringArrayList();
-                  mutable_bitField0_ |= 0x00000002;
-                }
-                statVars_.add(s);
-                break;
-              }
-            default:
-              {
-                if (!parseUnknownField(input, unknownFields, extensionRegistry, tag)) {
-                  done = true;
-                }
-                break;
-              }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(e).setUnfinishedMessage(this);
-      } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          places_ = places_.getUnmodifiableView();
-        }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          statVars_ = statVars_.getUnmodifiableView();
-        }
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-
-    public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
-      return org.datacommons.proto.Api
-          .internal_static_org_datacommons_proto_GetStatSetSeriesRequest_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return org.datacommons.proto.Api
-          .internal_static_org_datacommons_proto_GetStatSetSeriesRequest_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              org.datacommons.proto.Api.GetStatSetSeriesRequest.class,
-              org.datacommons.proto.Api.GetStatSetSeriesRequest.Builder.class);
-    }
-
-    public static final int PLACES_FIELD_NUMBER = 1;
-    private com.google.protobuf.LazyStringList places_;
-    /**
-     *
-     *
-     * <pre>
-     * The dcids of the place.
-     * </pre>
-     *
-     * <code>repeated string places = 1;</code>
-     *
-     * @return A list containing the places.
-     */
-    public com.google.protobuf.ProtocolStringList getPlacesList() {
-      return places_;
-    }
-    /**
-     *
-     *
-     * <pre>
-     * The dcids of the place.
-     * </pre>
-     *
-     * <code>repeated string places = 1;</code>
-     *
-     * @return The count of places.
-     */
-    public int getPlacesCount() {
-      return places_.size();
-    }
-    /**
-     *
-     *
-     * <pre>
-     * The dcids of the place.
-     * </pre>
-     *
-     * <code>repeated string places = 1;</code>
-     *
-     * @param index The index of the element to return.
-     * @return The places at the given index.
-     */
-    public java.lang.String getPlaces(int index) {
-      return places_.get(index);
-    }
-    /**
-     *
-     *
-     * <pre>
-     * The dcids of the place.
-     * </pre>
-     *
-     * <code>repeated string places = 1;</code>
-     *
-     * @param index The index of the value to return.
-     * @return The bytes of the places at the given index.
-     */
-    public com.google.protobuf.ByteString getPlacesBytes(int index) {
-      return places_.getByteString(index);
-    }
-
-    public static final int STAT_VARS_FIELD_NUMBER = 2;
-    private com.google.protobuf.LazyStringList statVars_;
-    /**
-     *
-     *
-     * <pre>
-     * The dcids of the statistical variables.
-     * </pre>
-     *
-     * <code>repeated string stat_vars = 2;</code>
-     *
-     * @return A list containing the statVars.
-     */
-    public com.google.protobuf.ProtocolStringList getStatVarsList() {
-      return statVars_;
-    }
-    /**
-     *
-     *
-     * <pre>
-     * The dcids of the statistical variables.
-     * </pre>
-     *
-     * <code>repeated string stat_vars = 2;</code>
-     *
-     * @return The count of statVars.
-     */
-    public int getStatVarsCount() {
-      return statVars_.size();
-    }
-    /**
-     *
-     *
-     * <pre>
-     * The dcids of the statistical variables.
-     * </pre>
-     *
-     * <code>repeated string stat_vars = 2;</code>
-     *
-     * @param index The index of the element to return.
-     * @return The statVars at the given index.
-     */
-    public java.lang.String getStatVars(int index) {
-      return statVars_.get(index);
-    }
-    /**
-     *
-     *
-     * <pre>
-     * The dcids of the statistical variables.
-     * </pre>
-     *
-     * <code>repeated string stat_vars = 2;</code>
-     *
-     * @param index The index of the value to return.
-     * @return The bytes of the statVars at the given index.
-     */
-    public com.google.protobuf.ByteString getStatVarsBytes(int index) {
-      return statVars_.getByteString(index);
-    }
-
-    private byte memoizedIsInitialized = -1;
-
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      for (int i = 0; i < places_.size(); i++) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, places_.getRaw(i));
-      }
-      for (int i = 0; i < statVars_.size(); i++) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, statVars_.getRaw(i));
-      }
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      {
-        int dataSize = 0;
-        for (int i = 0; i < places_.size(); i++) {
-          dataSize += computeStringSizeNoTag(places_.getRaw(i));
-        }
-        size += dataSize;
-        size += 1 * getPlacesList().size();
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < statVars_.size(); i++) {
-          dataSize += computeStringSizeNoTag(statVars_.getRaw(i));
-        }
-        size += dataSize;
-        size += 1 * getStatVarsList().size();
-      }
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-        return true;
-      }
-      if (!(obj instanceof org.datacommons.proto.Api.GetStatSetSeriesRequest)) {
-        return super.equals(obj);
-      }
-      org.datacommons.proto.Api.GetStatSetSeriesRequest other =
-          (org.datacommons.proto.Api.GetStatSetSeriesRequest) obj;
-
-      if (!getPlacesList().equals(other.getPlacesList())) return false;
-      if (!getStatVarsList().equals(other.getStatVarsList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      if (getPlacesCount() > 0) {
-        hash = (37 * hash) + PLACES_FIELD_NUMBER;
-        hash = (53 * hash) + getPlacesList().hashCode();
-      }
-      if (getStatVarsCount() > 0) {
-        hash = (37 * hash) + STAT_VARS_FIELD_NUMBER;
-        hash = (53 * hash) + getStatVarsList().hashCode();
-      }
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
-    }
-
-    public static org.datacommons.proto.Api.GetStatSetSeriesRequest parseFrom(
-        java.nio.ByteBuffer data) throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-
-    public static org.datacommons.proto.Api.GetStatSetSeriesRequest parseFrom(
-        java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-
-    public static org.datacommons.proto.Api.GetStatSetSeriesRequest parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-
-    public static org.datacommons.proto.Api.GetStatSetSeriesRequest parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-
-    public static org.datacommons.proto.Api.GetStatSetSeriesRequest parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-
-    public static org.datacommons.proto.Api.GetStatSetSeriesRequest parseFrom(
-        byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-
-    public static org.datacommons.proto.Api.GetStatSetSeriesRequest parseFrom(
-        java.io.InputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
-    }
-
-    public static org.datacommons.proto.Api.GetStatSetSeriesRequest parseFrom(
-        java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-          PARSER, input, extensionRegistry);
-    }
-
-    public static org.datacommons.proto.Api.GetStatSetSeriesRequest parseDelimitedFrom(
-        java.io.InputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
-    }
-
-    public static org.datacommons.proto.Api.GetStatSetSeriesRequest parseDelimitedFrom(
-        java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
-          PARSER, input, extensionRegistry);
-    }
-
-    public static org.datacommons.proto.Api.GetStatSetSeriesRequest parseFrom(
-        com.google.protobuf.CodedInputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
-    }
-
-    public static org.datacommons.proto.Api.GetStatSetSeriesRequest parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-          PARSER, input, extensionRegistry);
-    }
-
-    @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-
-    public static Builder newBuilder(org.datacommons.proto.Api.GetStatSetSeriesRequest prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
-
-    @java.lang.Override
-    public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
-    }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     *
-     *
-     * <pre>
-     * Request for GetStatSetSeries API.
-     * </pre>
-     *
-     * Protobuf type {@code org.datacommons.proto.GetStatSetSeriesRequest}
-     */
-    public static final class Builder
-        extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
-        implements
-        // @@protoc_insertion_point(builder_implements:org.datacommons.proto.GetStatSetSeriesRequest)
-        org.datacommons.proto.Api.GetStatSetSeriesRequestOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
-        return org.datacommons.proto.Api
-            .internal_static_org_datacommons_proto_GetStatSetSeriesRequest_descriptor;
-      }
-
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return org.datacommons.proto.Api
-            .internal_static_org_datacommons_proto_GetStatSetSeriesRequest_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                org.datacommons.proto.Api.GetStatSetSeriesRequest.class,
-                org.datacommons.proto.Api.GetStatSetSeriesRequest.Builder.class);
-      }
-
-      // Construct using org.datacommons.proto.Api.GetStatSetSeriesRequest.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders) {}
-      }
-
-      @java.lang.Override
-      public Builder clear() {
-        super.clear();
-        places_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000001);
-        statVars_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000002);
-        return this;
-      }
-
-      @java.lang.Override
-      public com.google.protobuf.Descriptors.Descriptor getDescriptorForType() {
-        return org.datacommons.proto.Api
-            .internal_static_org_datacommons_proto_GetStatSetSeriesRequest_descriptor;
-      }
-
-      @java.lang.Override
-      public org.datacommons.proto.Api.GetStatSetSeriesRequest getDefaultInstanceForType() {
-        return org.datacommons.proto.Api.GetStatSetSeriesRequest.getDefaultInstance();
-      }
-
-      @java.lang.Override
-      public org.datacommons.proto.Api.GetStatSetSeriesRequest build() {
-        org.datacommons.proto.Api.GetStatSetSeriesRequest result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      @java.lang.Override
-      public org.datacommons.proto.Api.GetStatSetSeriesRequest buildPartial() {
-        org.datacommons.proto.Api.GetStatSetSeriesRequest result =
-            new org.datacommons.proto.Api.GetStatSetSeriesRequest(this);
-        int from_bitField0_ = bitField0_;
-        if (((bitField0_ & 0x00000001) != 0)) {
-          places_ = places_.getUnmodifiableView();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        }
-        result.places_ = places_;
-        if (((bitField0_ & 0x00000002) != 0)) {
-          statVars_ = statVars_.getUnmodifiableView();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        }
-        result.statVars_ = statVars_;
-        onBuilt();
-        return result;
-      }
-
-      @java.lang.Override
-      public Builder clone() {
-        return super.clone();
-      }
-
-      @java.lang.Override
-      public Builder setField(
-          com.google.protobuf.Descriptors.FieldDescriptor field, java.lang.Object value) {
-        return super.setField(field, value);
-      }
-
-      @java.lang.Override
-      public Builder clearField(com.google.protobuf.Descriptors.FieldDescriptor field) {
-        return super.clearField(field);
-      }
-
-      @java.lang.Override
-      public Builder clearOneof(com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-        return super.clearOneof(oneof);
-      }
-
-      @java.lang.Override
-      public Builder setRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index,
-          java.lang.Object value) {
-        return super.setRepeatedField(field, index, value);
-      }
-
-      @java.lang.Override
-      public Builder addRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field, java.lang.Object value) {
-        return super.addRepeatedField(field, value);
-      }
-
-      @java.lang.Override
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof org.datacommons.proto.Api.GetStatSetSeriesRequest) {
-          return mergeFrom((org.datacommons.proto.Api.GetStatSetSeriesRequest) other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(org.datacommons.proto.Api.GetStatSetSeriesRequest other) {
-        if (other == org.datacommons.proto.Api.GetStatSetSeriesRequest.getDefaultInstance())
-          return this;
-        if (!other.places_.isEmpty()) {
-          if (places_.isEmpty()) {
-            places_ = other.places_;
-            bitField0_ = (bitField0_ & ~0x00000001);
-          } else {
-            ensurePlacesIsMutable();
-            places_.addAll(other.places_);
-          }
-          onChanged();
-        }
-        if (!other.statVars_.isEmpty()) {
-          if (statVars_.isEmpty()) {
-            statVars_ = other.statVars_;
-            bitField0_ = (bitField0_ & ~0x00000002);
-          } else {
-            ensureStatVarsIsMutable();
-            statVars_.addAll(other.statVars_);
-          }
-          onChanged();
-        }
-        this.mergeUnknownFields(other.unknownFields);
-        onChanged();
-        return this;
-      }
-
-      @java.lang.Override
-      public final boolean isInitialized() {
-        return true;
-      }
-
-      @java.lang.Override
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        org.datacommons.proto.Api.GetStatSetSeriesRequest parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage =
-              (org.datacommons.proto.Api.GetStatSetSeriesRequest) e.getUnfinishedMessage();
-          throw e.unwrapIOException();
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-
-      private int bitField0_;
-
-      private com.google.protobuf.LazyStringList places_ =
-          com.google.protobuf.LazyStringArrayList.EMPTY;
-
-      private void ensurePlacesIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          places_ = new com.google.protobuf.LazyStringArrayList(places_);
-          bitField0_ |= 0x00000001;
-        }
-      }
-      /**
-       *
-       *
-       * <pre>
-       * The dcids of the place.
-       * </pre>
-       *
-       * <code>repeated string places = 1;</code>
-       *
-       * @return A list containing the places.
-       */
-      public com.google.protobuf.ProtocolStringList getPlacesList() {
-        return places_.getUnmodifiableView();
-      }
-      /**
-       *
-       *
-       * <pre>
-       * The dcids of the place.
-       * </pre>
-       *
-       * <code>repeated string places = 1;</code>
-       *
-       * @return The count of places.
-       */
-      public int getPlacesCount() {
-        return places_.size();
-      }
-      /**
-       *
-       *
-       * <pre>
-       * The dcids of the place.
-       * </pre>
-       *
-       * <code>repeated string places = 1;</code>
-       *
-       * @param index The index of the element to return.
-       * @return The places at the given index.
-       */
-      public java.lang.String getPlaces(int index) {
-        return places_.get(index);
-      }
-      /**
-       *
-       *
-       * <pre>
-       * The dcids of the place.
-       * </pre>
-       *
-       * <code>repeated string places = 1;</code>
-       *
-       * @param index The index of the value to return.
-       * @return The bytes of the places at the given index.
-       */
-      public com.google.protobuf.ByteString getPlacesBytes(int index) {
-        return places_.getByteString(index);
-      }
-      /**
-       *
-       *
-       * <pre>
-       * The dcids of the place.
-       * </pre>
-       *
-       * <code>repeated string places = 1;</code>
-       *
-       * @param index The index to set the value at.
-       * @param value The places to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPlaces(int index, java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        ensurePlacesIsMutable();
-        places_.set(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       *
-       *
-       * <pre>
-       * The dcids of the place.
-       * </pre>
-       *
-       * <code>repeated string places = 1;</code>
-       *
-       * @param value The places to add.
-       * @return This builder for chaining.
-       */
-      public Builder addPlaces(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        ensurePlacesIsMutable();
-        places_.add(value);
-        onChanged();
-        return this;
-      }
-      /**
-       *
-       *
-       * <pre>
-       * The dcids of the place.
-       * </pre>
-       *
-       * <code>repeated string places = 1;</code>
-       *
-       * @param values The places to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllPlaces(java.lang.Iterable<java.lang.String> values) {
-        ensurePlacesIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(values, places_);
-        onChanged();
-        return this;
-      }
-      /**
-       *
-       *
-       * <pre>
-       * The dcids of the place.
-       * </pre>
-       *
-       * <code>repeated string places = 1;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearPlaces() {
-        places_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-      /**
-       *
-       *
-       * <pre>
-       * The dcids of the place.
-       * </pre>
-       *
-       * <code>repeated string places = 1;</code>
-       *
-       * @param value The bytes of the places to add.
-       * @return This builder for chaining.
-       */
-      public Builder addPlacesBytes(com.google.protobuf.ByteString value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        checkByteStringIsUtf8(value);
-        ensurePlacesIsMutable();
-        places_.add(value);
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.LazyStringList statVars_ =
-          com.google.protobuf.LazyStringArrayList.EMPTY;
-
-      private void ensureStatVarsIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          statVars_ = new com.google.protobuf.LazyStringArrayList(statVars_);
-          bitField0_ |= 0x00000002;
-        }
-      }
-      /**
-       *
-       *
-       * <pre>
-       * The dcids of the statistical variables.
-       * </pre>
-       *
-       * <code>repeated string stat_vars = 2;</code>
-       *
-       * @return A list containing the statVars.
-       */
-      public com.google.protobuf.ProtocolStringList getStatVarsList() {
-        return statVars_.getUnmodifiableView();
-      }
-      /**
-       *
-       *
-       * <pre>
-       * The dcids of the statistical variables.
-       * </pre>
-       *
-       * <code>repeated string stat_vars = 2;</code>
-       *
-       * @return The count of statVars.
-       */
-      public int getStatVarsCount() {
-        return statVars_.size();
-      }
-      /**
-       *
-       *
-       * <pre>
-       * The dcids of the statistical variables.
-       * </pre>
-       *
-       * <code>repeated string stat_vars = 2;</code>
-       *
-       * @param index The index of the element to return.
-       * @return The statVars at the given index.
-       */
-      public java.lang.String getStatVars(int index) {
-        return statVars_.get(index);
-      }
-      /**
-       *
-       *
-       * <pre>
-       * The dcids of the statistical variables.
-       * </pre>
-       *
-       * <code>repeated string stat_vars = 2;</code>
-       *
-       * @param index The index of the value to return.
-       * @return The bytes of the statVars at the given index.
-       */
-      public com.google.protobuf.ByteString getStatVarsBytes(int index) {
-        return statVars_.getByteString(index);
-      }
-      /**
-       *
-       *
-       * <pre>
-       * The dcids of the statistical variables.
-       * </pre>
-       *
-       * <code>repeated string stat_vars = 2;</code>
-       *
-       * @param index The index to set the value at.
-       * @param value The statVars to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStatVars(int index, java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        ensureStatVarsIsMutable();
-        statVars_.set(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       *
-       *
-       * <pre>
-       * The dcids of the statistical variables.
-       * </pre>
-       *
-       * <code>repeated string stat_vars = 2;</code>
-       *
-       * @param value The statVars to add.
-       * @return This builder for chaining.
-       */
-      public Builder addStatVars(java.lang.String value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        ensureStatVarsIsMutable();
-        statVars_.add(value);
-        onChanged();
-        return this;
-      }
-      /**
-       *
-       *
-       * <pre>
-       * The dcids of the statistical variables.
-       * </pre>
-       *
-       * <code>repeated string stat_vars = 2;</code>
-       *
-       * @param values The statVars to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllStatVars(java.lang.Iterable<java.lang.String> values) {
-        ensureStatVarsIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(values, statVars_);
-        onChanged();
-        return this;
-      }
-      /**
-       *
-       *
-       * <pre>
-       * The dcids of the statistical variables.
-       * </pre>
-       *
-       * <code>repeated string stat_vars = 2;</code>
-       *
-       * @return This builder for chaining.
-       */
-      public Builder clearStatVars() {
-        statVars_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000002);
-        onChanged();
-        return this;
-      }
-      /**
-       *
-       *
-       * <pre>
-       * The dcids of the statistical variables.
-       * </pre>
-       *
-       * <code>repeated string stat_vars = 2;</code>
-       *
-       * @param value The bytes of the statVars to add.
-       * @return This builder for chaining.
-       */
-      public Builder addStatVarsBytes(com.google.protobuf.ByteString value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        checkByteStringIsUtf8(value);
-        ensureStatVarsIsMutable();
-        statVars_.add(value);
-        onChanged();
-        return this;
-      }
-
-      @java.lang.Override
-      public final Builder setUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.setUnknownFields(unknownFields);
-      }
-
-      @java.lang.Override
-      public final Builder mergeUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.mergeUnknownFields(unknownFields);
-      }
-
-      // @@protoc_insertion_point(builder_scope:org.datacommons.proto.GetStatSetSeriesRequest)
-    }
-
-    // @@protoc_insertion_point(class_scope:org.datacommons.proto.GetStatSetSeriesRequest)
-    private static final org.datacommons.proto.Api.GetStatSetSeriesRequest DEFAULT_INSTANCE;
-
-    static {
-      DEFAULT_INSTANCE = new org.datacommons.proto.Api.GetStatSetSeriesRequest();
-    }
-
-    public static org.datacommons.proto.Api.GetStatSetSeriesRequest getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<GetStatSetSeriesRequest> PARSER =
-        new com.google.protobuf.AbstractParser<GetStatSetSeriesRequest>() {
-          @java.lang.Override
-          public GetStatSetSeriesRequest parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new GetStatSetSeriesRequest(input, extensionRegistry);
-          }
-        };
-
-    public static com.google.protobuf.Parser<GetStatSetSeriesRequest> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<GetStatSetSeriesRequest> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public org.datacommons.proto.Api.GetStatSetSeriesRequest getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-  }
-
-  public interface GetStatSetSeriesResponseOrBuilder
-      extends
+  public interface GetStatSetSeriesResponseOrBuilder extends
       // @@protoc_insertion_point(interface_extends:org.datacommons.proto.GetStatSetSeriesResponse)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     *
-     *
      * <pre>
      * A map from place dcid to series map.
      * </pre>
@@ -5206,82 +3195,82 @@ public final class Api {
      */
     int getDataCount();
     /**
-     *
-     *
      * <pre>
      * A map from place dcid to series map.
      * </pre>
      *
      * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; data = 1;</code>
      */
-    boolean containsData(java.lang.String key);
-    /** Use {@link #getDataMap()} instead. */
+    boolean containsData(
+        java.lang.String key);
+    /**
+     * Use {@link #getDataMap()} instead.
+     */
     @java.lang.Deprecated
-    java.util.Map<java.lang.String, org.datacommons.proto.Api.SeriesMap> getData();
+    java.util.Map<java.lang.String, org.datacommons.proto.Api.SeriesMap>
+    getData();
     /**
-     *
-     *
      * <pre>
      * A map from place dcid to series map.
      * </pre>
      *
      * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; data = 1;</code>
      */
-    java.util.Map<java.lang.String, org.datacommons.proto.Api.SeriesMap> getDataMap();
+    java.util.Map<java.lang.String, org.datacommons.proto.Api.SeriesMap>
+    getDataMap();
     /**
-     *
-     *
      * <pre>
      * A map from place dcid to series map.
      * </pre>
      *
      * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; data = 1;</code>
      */
+
     org.datacommons.proto.Api.SeriesMap getDataOrDefault(
-        java.lang.String key, org.datacommons.proto.Api.SeriesMap defaultValue);
+        java.lang.String key,
+        org.datacommons.proto.Api.SeriesMap defaultValue);
     /**
-     *
-     *
      * <pre>
      * A map from place dcid to series map.
      * </pre>
      *
      * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; data = 1;</code>
      */
-    org.datacommons.proto.Api.SeriesMap getDataOrThrow(java.lang.String key);
+
+    org.datacommons.proto.Api.SeriesMap getDataOrThrow(
+        java.lang.String key);
   }
   /**
-   *
-   *
    * <pre>
    * Response of GetStatSetSeries
    * </pre>
    *
    * Protobuf type {@code org.datacommons.proto.GetStatSetSeriesResponse}
    */
-  public static final class GetStatSetSeriesResponse extends com.google.protobuf.GeneratedMessageV3
-      implements
+  public  static final class GetStatSetSeriesResponse extends
+      com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:org.datacommons.proto.GetStatSetSeriesResponse)
       GetStatSetSeriesResponseOrBuilder {
-    private static final long serialVersionUID = 0L;
+  private static final long serialVersionUID = 0L;
     // Use GetStatSetSeriesResponse.newBuilder() to construct.
     private GetStatSetSeriesResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-
-    private GetStatSetSeriesResponse() {}
+    private GetStatSetSeriesResponse() {
+    }
 
     @java.lang.Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(UnusedPrivateParameter unused) {
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
       return new GetStatSetSeriesResponse();
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet getUnknownFields() {
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
       return this.unknownFields;
     }
-
     private GetStatSetSeriesResponse(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -5301,89 +3290,82 @@ public final class Api {
             case 0:
               done = true;
               break;
-            case 10:
-              {
-                if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                  data_ =
-                      com.google.protobuf.MapField.newMapField(DataDefaultEntryHolder.defaultEntry);
-                  mutable_bitField0_ |= 0x00000001;
-                }
-                com.google.protobuf.MapEntry<java.lang.String, org.datacommons.proto.Api.SeriesMap>
-                    data__ =
-                        input.readMessage(
-                            DataDefaultEntryHolder.defaultEntry.getParserForType(),
-                            extensionRegistry);
-                data_.getMutableMap().put(data__.getKey(), data__.getValue());
-                break;
+            case 10: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                data_ = com.google.protobuf.MapField.newMapField(
+                    DataDefaultEntryHolder.defaultEntry);
+                mutable_bitField0_ |= 0x00000001;
               }
-            default:
-              {
-                if (!parseUnknownField(input, unknownFields, extensionRegistry, tag)) {
-                  done = true;
-                }
-                break;
+              com.google.protobuf.MapEntry<java.lang.String, org.datacommons.proto.Api.SeriesMap>
+              data__ = input.readMessage(
+                  DataDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              data_.getMutableMap().put(
+                  data__.getKey(), data__.getValue());
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
               }
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(e).setUnfinishedMessage(this);
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
       } finally {
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
     }
-
-    public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
-      return org.datacommons.proto.Api
-          .internal_static_org_datacommons_proto_GetStatSetSeriesResponse_descriptor;
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return org.datacommons.proto.Api.internal_static_org_datacommons_proto_GetStatSetSeriesResponse_descriptor;
     }
 
     @SuppressWarnings({"rawtypes"})
     @java.lang.Override
-    protected com.google.protobuf.MapField internalGetMapField(int number) {
+    protected com.google.protobuf.MapField internalGetMapField(
+        int number) {
       switch (number) {
         case 1:
           return internalGetData();
         default:
-          throw new RuntimeException("Invalid map field number: " + number);
+          throw new RuntimeException(
+              "Invalid map field number: " + number);
       }
     }
-
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return org.datacommons.proto.Api
-          .internal_static_org_datacommons_proto_GetStatSetSeriesResponse_fieldAccessorTable
+      return org.datacommons.proto.Api.internal_static_org_datacommons_proto_GetStatSetSeriesResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              org.datacommons.proto.Api.GetStatSetSeriesResponse.class,
-              org.datacommons.proto.Api.GetStatSetSeriesResponse.Builder.class);
+              org.datacommons.proto.Api.GetStatSetSeriesResponse.class, org.datacommons.proto.Api.GetStatSetSeriesResponse.Builder.class);
     }
 
     public static final int DATA_FIELD_NUMBER = 1;
-
     private static final class DataDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
-              java.lang.String, org.datacommons.proto.Api.SeriesMap>
-          defaultEntry =
+          java.lang.String, org.datacommons.proto.Api.SeriesMap> defaultEntry =
               com.google.protobuf.MapEntry
-                  .<java.lang.String, org.datacommons.proto.Api.SeriesMap>newDefaultInstance(
-                      org.datacommons.proto.Api
-                          .internal_static_org_datacommons_proto_GetStatSetSeriesResponse_DataEntry_descriptor,
-                      com.google.protobuf.WireFormat.FieldType.STRING,
-                      "",
-                      com.google.protobuf.WireFormat.FieldType.MESSAGE,
-                      org.datacommons.proto.Api.SeriesMap.getDefaultInstance());
+              .<java.lang.String, org.datacommons.proto.Api.SeriesMap>newDefaultInstance(
+                  org.datacommons.proto.Api.internal_static_org_datacommons_proto_GetStatSetSeriesResponse_DataEntry_descriptor, 
+                  com.google.protobuf.WireFormat.FieldType.STRING,
+                  "",
+                  com.google.protobuf.WireFormat.FieldType.MESSAGE,
+                  org.datacommons.proto.Api.SeriesMap.getDefaultInstance());
     }
-
+    private com.google.protobuf.MapField<
+        java.lang.String, org.datacommons.proto.Api.SeriesMap> data_;
     private com.google.protobuf.MapField<java.lang.String, org.datacommons.proto.Api.SeriesMap>
-        data_;
-
-    private com.google.protobuf.MapField<java.lang.String, org.datacommons.proto.Api.SeriesMap>
-        internalGetData() {
+    internalGetData() {
       if (data_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(DataDefaultEntryHolder.defaultEntry);
+        return com.google.protobuf.MapField.emptyMapField(
+            DataDefaultEntryHolder.defaultEntry);
       }
       return data_;
     }
@@ -5392,68 +3374,63 @@ public final class Api {
       return internalGetData().getMap().size();
     }
     /**
-     *
-     *
      * <pre>
      * A map from place dcid to series map.
      * </pre>
      *
      * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; data = 1;</code>
      */
-    public boolean containsData(java.lang.String key) {
-      if (key == null) {
-        throw new java.lang.NullPointerException();
-      }
+
+    public boolean containsData(
+        java.lang.String key) {
+      if (key == null) { throw new java.lang.NullPointerException(); }
       return internalGetData().getMap().containsKey(key);
     }
-    /** Use {@link #getDataMap()} instead. */
+    /**
+     * Use {@link #getDataMap()} instead.
+     */
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, org.datacommons.proto.Api.SeriesMap> getData() {
       return getDataMap();
     }
     /**
-     *
-     *
      * <pre>
      * A map from place dcid to series map.
      * </pre>
      *
      * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; data = 1;</code>
      */
+
     public java.util.Map<java.lang.String, org.datacommons.proto.Api.SeriesMap> getDataMap() {
       return internalGetData().getMap();
     }
     /**
-     *
-     *
      * <pre>
      * A map from place dcid to series map.
      * </pre>
      *
      * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; data = 1;</code>
      */
+
     public org.datacommons.proto.Api.SeriesMap getDataOrDefault(
-        java.lang.String key, org.datacommons.proto.Api.SeriesMap defaultValue) {
-      if (key == null) {
-        throw new java.lang.NullPointerException();
-      }
+        java.lang.String key,
+        org.datacommons.proto.Api.SeriesMap defaultValue) {
+      if (key == null) { throw new java.lang.NullPointerException(); }
       java.util.Map<java.lang.String, org.datacommons.proto.Api.SeriesMap> map =
           internalGetData().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     *
-     *
      * <pre>
      * A map from place dcid to series map.
      * </pre>
      *
      * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; data = 1;</code>
      */
-    public org.datacommons.proto.Api.SeriesMap getDataOrThrow(java.lang.String key) {
-      if (key == null) {
-        throw new java.lang.NullPointerException();
-      }
+
+    public org.datacommons.proto.Api.SeriesMap getDataOrThrow(
+        java.lang.String key) {
+      if (key == null) { throw new java.lang.NullPointerException(); }
       java.util.Map<java.lang.String, org.datacommons.proto.Api.SeriesMap> map =
           internalGetData().getMap();
       if (!map.containsKey(key)) {
@@ -5463,7 +3440,6 @@ public final class Api {
     }
 
     private byte memoizedIsInitialized = -1;
-
     @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -5475,9 +3451,14 @@ public final class Api {
     }
 
     @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      com.google.protobuf.GeneratedMessageV3.serializeStringMapTo(
-          output, internalGetData(), DataDefaultEntryHolder.defaultEntry, 1);
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      com.google.protobuf.GeneratedMessageV3
+        .serializeStringMapTo(
+          output,
+          internalGetData(),
+          DataDefaultEntryHolder.defaultEntry,
+          1);
       unknownFields.writeTo(output);
     }
 
@@ -5487,15 +3468,15 @@ public final class Api {
       if (size != -1) return size;
 
       size = 0;
-      for (java.util.Map.Entry<java.lang.String, org.datacommons.proto.Api.SeriesMap> entry :
-          internalGetData().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.String, org.datacommons.proto.Api.SeriesMap> data__ =
-            DataDefaultEntryHolder.defaultEntry
-                .newBuilderForType()
-                .setKey(entry.getKey())
-                .setValue(entry.getValue())
-                .build();
-        size += com.google.protobuf.CodedOutputStream.computeMessageSize(1, data__);
+      for (java.util.Map.Entry<java.lang.String, org.datacommons.proto.Api.SeriesMap> entry
+           : internalGetData().getMap().entrySet()) {
+        com.google.protobuf.MapEntry<java.lang.String, org.datacommons.proto.Api.SeriesMap>
+        data__ = DataDefaultEntryHolder.defaultEntry.newBuilderForType()
+            .setKey(entry.getKey())
+            .setValue(entry.getValue())
+            .build();
+        size += com.google.protobuf.CodedOutputStream
+            .computeMessageSize(1, data__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -5505,15 +3486,15 @@ public final class Api {
     @java.lang.Override
     public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
-        return true;
+       return true;
       }
       if (!(obj instanceof org.datacommons.proto.Api.GetStatSetSeriesResponse)) {
         return super.equals(obj);
       }
-      org.datacommons.proto.Api.GetStatSetSeriesResponse other =
-          (org.datacommons.proto.Api.GetStatSetSeriesResponse) obj;
+      org.datacommons.proto.Api.GetStatSetSeriesResponse other = (org.datacommons.proto.Api.GetStatSetSeriesResponse) obj;
 
-      if (!internalGetData().equals(other.internalGetData())) return false;
+      if (!internalGetData().equals(
+          other.internalGetData())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -5535,93 +3516,87 @@ public final class Api {
     }
 
     public static org.datacommons.proto.Api.GetStatSetSeriesResponse parseFrom(
-        java.nio.ByteBuffer data) throws com.google.protobuf.InvalidProtocolBufferException {
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-
     public static org.datacommons.proto.Api.GetStatSetSeriesResponse parseFrom(
-        java.nio.ByteBuffer data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-
     public static org.datacommons.proto.Api.GetStatSetSeriesResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-
     public static org.datacommons.proto.Api.GetStatSetSeriesResponse parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-
     public static org.datacommons.proto.Api.GetStatSetSeriesResponse parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-
     public static org.datacommons.proto.Api.GetStatSetSeriesResponse parseFrom(
-        byte[] data, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-
-    public static org.datacommons.proto.Api.GetStatSetSeriesResponse parseFrom(
-        java.io.InputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
-    }
-
-    public static org.datacommons.proto.Api.GetStatSetSeriesResponse parseFrom(
-        java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+    public static org.datacommons.proto.Api.GetStatSetSeriesResponse parseFrom(java.io.InputStream input)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-          PARSER, input, extensionRegistry);
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
     }
-
-    public static org.datacommons.proto.Api.GetStatSetSeriesResponse parseDelimitedFrom(
-        java.io.InputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(PARSER, input);
-    }
-
-    public static org.datacommons.proto.Api.GetStatSetSeriesResponse parseDelimitedFrom(
-        java.io.InputStream input, com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseDelimitedWithIOException(
-          PARSER, input, extensionRegistry);
-    }
-
     public static org.datacommons.proto.Api.GetStatSetSeriesResponse parseFrom(
-        com.google.protobuf.CodedInputStream input) throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(PARSER, input);
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
+    public static org.datacommons.proto.Api.GetStatSetSeriesResponse parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static org.datacommons.proto.Api.GetStatSetSeriesResponse parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static org.datacommons.proto.Api.GetStatSetSeriesResponse parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
     public static org.datacommons.proto.Api.GetStatSetSeriesResponse parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3.parseWithIOException(
-          PARSER, input, extensionRegistry);
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
     @java.lang.Override
-    public Builder newBuilderForType() {
-      return newBuilder();
-    }
-
+    public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-
     public static Builder newBuilder(org.datacommons.proto.Api.GetStatSetSeriesResponse prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-
     @java.lang.Override
     public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE ? new Builder() : new Builder().mergeFrom(this);
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
     }
 
     @java.lang.Override
@@ -5631,52 +3606,49 @@ public final class Api {
       return builder;
     }
     /**
-     *
-     *
      * <pre>
      * Response of GetStatSetSeries
      * </pre>
      *
      * Protobuf type {@code org.datacommons.proto.GetStatSetSeriesResponse}
      */
-    public static final class Builder
-        extends com.google.protobuf.GeneratedMessageV3.Builder<Builder>
-        implements
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:org.datacommons.proto.GetStatSetSeriesResponse)
         org.datacommons.proto.Api.GetStatSetSeriesResponseOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor getDescriptor() {
-        return org.datacommons.proto.Api
-            .internal_static_org_datacommons_proto_GetStatSetSeriesResponse_descriptor;
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return org.datacommons.proto.Api.internal_static_org_datacommons_proto_GetStatSetSeriesResponse_descriptor;
       }
 
       @SuppressWarnings({"rawtypes"})
-      protected com.google.protobuf.MapField internalGetMapField(int number) {
+      protected com.google.protobuf.MapField internalGetMapField(
+          int number) {
         switch (number) {
           case 1:
             return internalGetData();
           default:
-            throw new RuntimeException("Invalid map field number: " + number);
+            throw new RuntimeException(
+                "Invalid map field number: " + number);
         }
       }
-
       @SuppressWarnings({"rawtypes"})
-      protected com.google.protobuf.MapField internalGetMutableMapField(int number) {
+      protected com.google.protobuf.MapField internalGetMutableMapField(
+          int number) {
         switch (number) {
           case 1:
             return internalGetMutableData();
           default:
-            throw new RuntimeException("Invalid map field number: " + number);
+            throw new RuntimeException(
+                "Invalid map field number: " + number);
         }
       }
-
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return org.datacommons.proto.Api
-            .internal_static_org_datacommons_proto_GetStatSetSeriesResponse_fieldAccessorTable
+        return org.datacommons.proto.Api.internal_static_org_datacommons_proto_GetStatSetSeriesResponse_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                org.datacommons.proto.Api.GetStatSetSeriesResponse.class,
-                org.datacommons.proto.Api.GetStatSetSeriesResponse.Builder.class);
+                org.datacommons.proto.Api.GetStatSetSeriesResponse.class, org.datacommons.proto.Api.GetStatSetSeriesResponse.Builder.class);
       }
 
       // Construct using org.datacommons.proto.Api.GetStatSetSeriesResponse.newBuilder()
@@ -5684,15 +3656,16 @@ public final class Api {
         maybeForceBuilderInitialization();
       }
 
-      private Builder(com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
-
       private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders) {}
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
       }
-
       @java.lang.Override
       public Builder clear() {
         super.clear();
@@ -5701,9 +3674,9 @@ public final class Api {
       }
 
       @java.lang.Override
-      public com.google.protobuf.Descriptors.Descriptor getDescriptorForType() {
-        return org.datacommons.proto.Api
-            .internal_static_org_datacommons_proto_GetStatSetSeriesResponse_descriptor;
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return org.datacommons.proto.Api.internal_static_org_datacommons_proto_GetStatSetSeriesResponse_descriptor;
       }
 
       @java.lang.Override
@@ -5722,8 +3695,7 @@ public final class Api {
 
       @java.lang.Override
       public org.datacommons.proto.Api.GetStatSetSeriesResponse buildPartial() {
-        org.datacommons.proto.Api.GetStatSetSeriesResponse result =
-            new org.datacommons.proto.Api.GetStatSetSeriesResponse(this);
+        org.datacommons.proto.Api.GetStatSetSeriesResponse result = new org.datacommons.proto.Api.GetStatSetSeriesResponse(this);
         int from_bitField0_ = bitField0_;
         result.data_ = internalGetData();
         result.data_.makeImmutable();
@@ -5735,41 +3707,38 @@ public final class Api {
       public Builder clone() {
         return super.clone();
       }
-
       @java.lang.Override
       public Builder setField(
-          com.google.protobuf.Descriptors.FieldDescriptor field, java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
         return super.setField(field, value);
       }
-
       @java.lang.Override
-      public Builder clearField(com.google.protobuf.Descriptors.FieldDescriptor field) {
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-
       @java.lang.Override
-      public Builder clearOneof(com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-
       @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index,
-          java.lang.Object value) {
+          int index, java.lang.Object value) {
         return super.setRepeatedField(field, index, value);
       }
-
       @java.lang.Override
       public Builder addRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field, java.lang.Object value) {
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
         if (other instanceof org.datacommons.proto.Api.GetStatSetSeriesResponse) {
-          return mergeFrom((org.datacommons.proto.Api.GetStatSetSeriesResponse) other);
+          return mergeFrom((org.datacommons.proto.Api.GetStatSetSeriesResponse)other);
         } else {
           super.mergeFrom(other);
           return this;
@@ -5777,9 +3746,9 @@ public final class Api {
       }
 
       public Builder mergeFrom(org.datacommons.proto.Api.GetStatSetSeriesResponse other) {
-        if (other == org.datacommons.proto.Api.GetStatSetSeriesResponse.getDefaultInstance())
-          return this;
-        internalGetMutableData().mergeFrom(other.internalGetData());
+        if (other == org.datacommons.proto.Api.GetStatSetSeriesResponse.getDefaultInstance()) return this;
+        internalGetMutableData().mergeFrom(
+            other.internalGetData());
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -5799,8 +3768,7 @@ public final class Api {
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage =
-              (org.datacommons.proto.Api.GetStatSetSeriesResponse) e.getUnfinishedMessage();
+          parsedMessage = (org.datacommons.proto.Api.GetStatSetSeriesResponse) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -5809,26 +3777,24 @@ public final class Api {
         }
         return this;
       }
-
       private int bitField0_;
 
+      private com.google.protobuf.MapField<
+          java.lang.String, org.datacommons.proto.Api.SeriesMap> data_;
       private com.google.protobuf.MapField<java.lang.String, org.datacommons.proto.Api.SeriesMap>
-          data_;
-
-      private com.google.protobuf.MapField<java.lang.String, org.datacommons.proto.Api.SeriesMap>
-          internalGetData() {
+      internalGetData() {
         if (data_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(DataDefaultEntryHolder.defaultEntry);
+          return com.google.protobuf.MapField.emptyMapField(
+              DataDefaultEntryHolder.defaultEntry);
         }
         return data_;
       }
-
       private com.google.protobuf.MapField<java.lang.String, org.datacommons.proto.Api.SeriesMap>
-          internalGetMutableData() {
-        onChanged();
-        ;
+      internalGetMutableData() {
+        onChanged();;
         if (data_ == null) {
-          data_ = com.google.protobuf.MapField.newMapField(DataDefaultEntryHolder.defaultEntry);
+          data_ = com.google.protobuf.MapField.newMapField(
+              DataDefaultEntryHolder.defaultEntry);
         }
         if (!data_.isMutable()) {
           data_ = data_.copy();
@@ -5840,68 +3806,63 @@ public final class Api {
         return internalGetData().getMap().size();
       }
       /**
-       *
-       *
        * <pre>
        * A map from place dcid to series map.
        * </pre>
        *
        * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; data = 1;</code>
        */
-      public boolean containsData(java.lang.String key) {
-        if (key == null) {
-          throw new java.lang.NullPointerException();
-        }
+
+      public boolean containsData(
+          java.lang.String key) {
+        if (key == null) { throw new java.lang.NullPointerException(); }
         return internalGetData().getMap().containsKey(key);
       }
-      /** Use {@link #getDataMap()} instead. */
+      /**
+       * Use {@link #getDataMap()} instead.
+       */
       @java.lang.Deprecated
       public java.util.Map<java.lang.String, org.datacommons.proto.Api.SeriesMap> getData() {
         return getDataMap();
       }
       /**
-       *
-       *
        * <pre>
        * A map from place dcid to series map.
        * </pre>
        *
        * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; data = 1;</code>
        */
+
       public java.util.Map<java.lang.String, org.datacommons.proto.Api.SeriesMap> getDataMap() {
         return internalGetData().getMap();
       }
       /**
-       *
-       *
        * <pre>
        * A map from place dcid to series map.
        * </pre>
        *
        * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; data = 1;</code>
        */
+
       public org.datacommons.proto.Api.SeriesMap getDataOrDefault(
-          java.lang.String key, org.datacommons.proto.Api.SeriesMap defaultValue) {
-        if (key == null) {
-          throw new java.lang.NullPointerException();
-        }
+          java.lang.String key,
+          org.datacommons.proto.Api.SeriesMap defaultValue) {
+        if (key == null) { throw new java.lang.NullPointerException(); }
         java.util.Map<java.lang.String, org.datacommons.proto.Api.SeriesMap> map =
             internalGetData().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       *
-       *
        * <pre>
        * A map from place dcid to series map.
        * </pre>
        *
        * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; data = 1;</code>
        */
-      public org.datacommons.proto.Api.SeriesMap getDataOrThrow(java.lang.String key) {
-        if (key == null) {
-          throw new java.lang.NullPointerException();
-        }
+
+      public org.datacommons.proto.Api.SeriesMap getDataOrThrow(
+          java.lang.String key) {
+        if (key == null) { throw new java.lang.NullPointerException(); }
         java.util.Map<java.lang.String, org.datacommons.proto.Api.SeriesMap> map =
             internalGetData().getMap();
         if (!map.containsKey(key)) {
@@ -5911,64 +3872,63 @@ public final class Api {
       }
 
       public Builder clearData() {
-        internalGetMutableData().getMutableMap().clear();
+        internalGetMutableData().getMutableMap()
+            .clear();
         return this;
       }
       /**
-       *
-       *
        * <pre>
        * A map from place dcid to series map.
        * </pre>
        *
        * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; data = 1;</code>
        */
-      public Builder removeData(java.lang.String key) {
-        if (key == null) {
-          throw new java.lang.NullPointerException();
-        }
-        internalGetMutableData().getMutableMap().remove(key);
+
+      public Builder removeData(
+          java.lang.String key) {
+        if (key == null) { throw new java.lang.NullPointerException(); }
+        internalGetMutableData().getMutableMap()
+            .remove(key);
         return this;
       }
-      /** Use alternate mutation accessors instead. */
+      /**
+       * Use alternate mutation accessors instead.
+       */
       @java.lang.Deprecated
-      public java.util.Map<java.lang.String, org.datacommons.proto.Api.SeriesMap> getMutableData() {
+      public java.util.Map<java.lang.String, org.datacommons.proto.Api.SeriesMap>
+      getMutableData() {
         return internalGetMutableData().getMutableMap();
       }
       /**
-       *
-       *
        * <pre>
        * A map from place dcid to series map.
        * </pre>
        *
        * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; data = 1;</code>
        */
-      public Builder putData(java.lang.String key, org.datacommons.proto.Api.SeriesMap value) {
-        if (key == null) {
-          throw new java.lang.NullPointerException();
-        }
-        if (value == null) {
-          throw new java.lang.NullPointerException();
-        }
-        internalGetMutableData().getMutableMap().put(key, value);
+      public Builder putData(
+          java.lang.String key,
+          org.datacommons.proto.Api.SeriesMap value) {
+        if (key == null) { throw new java.lang.NullPointerException(); }
+        if (value == null) { throw new java.lang.NullPointerException(); }
+        internalGetMutableData().getMutableMap()
+            .put(key, value);
         return this;
       }
       /**
-       *
-       *
        * <pre>
        * A map from place dcid to series map.
        * </pre>
        *
        * <code>map&lt;string, .org.datacommons.proto.SeriesMap&gt; data = 1;</code>
        */
+
       public Builder putAllData(
           java.util.Map<java.lang.String, org.datacommons.proto.Api.SeriesMap> values) {
-        internalGetMutableData().getMutableMap().putAll(values);
+        internalGetMutableData().getMutableMap()
+            .putAll(values);
         return this;
       }
-
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -5981,12 +3941,12 @@ public final class Api {
         return super.mergeUnknownFields(unknownFields);
       }
 
+
       // @@protoc_insertion_point(builder_scope:org.datacommons.proto.GetStatSetSeriesResponse)
     }
 
     // @@protoc_insertion_point(class_scope:org.datacommons.proto.GetStatSetSeriesResponse)
     private static final org.datacommons.proto.Api.GetStatSetSeriesResponse DEFAULT_INSTANCE;
-
     static {
       DEFAULT_INSTANCE = new org.datacommons.proto.Api.GetStatSetSeriesResponse();
     }
@@ -5995,16 +3955,16 @@ public final class Api {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<GetStatSetSeriesResponse> PARSER =
-        new com.google.protobuf.AbstractParser<GetStatSetSeriesResponse>() {
-          @java.lang.Override
-          public GetStatSetSeriesResponse parsePartialFrom(
-              com.google.protobuf.CodedInputStream input,
-              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-              throws com.google.protobuf.InvalidProtocolBufferException {
-            return new GetStatSetSeriesResponse(input, extensionRegistry);
-          }
-        };
+    private static final com.google.protobuf.Parser<GetStatSetSeriesResponse>
+        PARSER = new com.google.protobuf.AbstractParser<GetStatSetSeriesResponse>() {
+      @java.lang.Override
+      public GetStatSetSeriesResponse parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new GetStatSetSeriesResponse(input, extensionRegistry);
+      }
+    };
 
     public static com.google.protobuf.Parser<GetStatSetSeriesResponse> parser() {
       return PARSER;
@@ -6019,172 +3979,118 @@ public final class Api {
     public org.datacommons.proto.Api.GetStatSetSeriesResponse getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
+
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_org_datacommons_proto_StatMetadata_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    internal_static_org_datacommons_proto_StatMetadata_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_org_datacommons_proto_StatMetadata_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_org_datacommons_proto_Series_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    internal_static_org_datacommons_proto_Series_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_org_datacommons_proto_Series_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_org_datacommons_proto_Series_ValEntry_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    internal_static_org_datacommons_proto_Series_ValEntry_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_org_datacommons_proto_Series_ValEntry_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_org_datacommons_proto_SeriesMap_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    internal_static_org_datacommons_proto_SeriesMap_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_org_datacommons_proto_SeriesMap_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_org_datacommons_proto_SeriesMap_DataEntry_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    internal_static_org_datacommons_proto_SeriesMap_DataEntry_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_org_datacommons_proto_SeriesMap_DataEntry_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_org_datacommons_proto_GetStatAllResponse_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_org_datacommons_proto_GetStatAllResponse_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_org_datacommons_proto_GetStatAllResponse_PlaceDataEntry_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_org_datacommons_proto_GetStatAllResponse_PlaceDataEntry_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_org_datacommons_proto_GetStatSetSeriesRequest_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_org_datacommons_proto_GetStatSetSeriesRequest_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_org_datacommons_proto_GetStatSetSeriesResponse_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    internal_static_org_datacommons_proto_GetStatSetSeriesResponse_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_org_datacommons_proto_GetStatSetSeriesResponse_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-      internal_static_org_datacommons_proto_GetStatSetSeriesResponse_DataEntry_descriptor;
-  private static final com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    internal_static_org_datacommons_proto_GetStatSetSeriesResponse_DataEntry_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_org_datacommons_proto_GetStatSetSeriesResponse_DataEntry_fieldAccessorTable;
 
-  public static com.google.protobuf.Descriptors.FileDescriptor getDescriptor() {
+  public static com.google.protobuf.Descriptors.FileDescriptor
+      getDescriptor() {
     return descriptor;
   }
-
-  private static com.google.protobuf.Descriptors.FileDescriptor descriptor;
-
+  private static  com.google.protobuf.Descriptors.FileDescriptor
+      descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\tapi.proto\022\025org.datacommons.proto\"\231\001\n\014S"
-          + "tatMetadata\022\023\n\013import_name\030\001 \001(\t\022\026\n\016prov"
-          + "enance_url\030\002 \001(\t\022\032\n\022measurement_method\030\003"
-          + " \001(\t\022\032\n\022observation_period\030\004 \001(\t\022\026\n\016scal"
-          + "ing_factor\030\005 \001(\t\022\014\n\004unit\030\006 \001(\t\"\240\001\n\006Serie"
-          + "s\0223\n\003val\030\001 \003(\0132&.org.datacommons.proto.S"
-          + "eries.ValEntry\0225\n\010metadata\030\002 \001(\0132#.org.d"
-          + "atacommons.proto.StatMetadata\032*\n\010ValEntr"
-          + "y\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\001:\0028\001\"\221\001\n\tSe"
-          + "riesMap\0228\n\004data\030\001 \003(\0132*.org.datacommons."
-          + "proto.SeriesMap.DataEntry\032J\n\tDataEntry\022\013"
-          + "\n\003key\030\001 \001(\t\022,\n\005value\030\002 \001(\0132\035.org.datacom"
-          + "mons.proto.Series:\0028\001\"\266\001\n\022GetStatAllResp"
-          + "onse\022L\n\nplace_data\030\001 \003(\01328.org.datacommo"
-          + "ns.proto.GetStatAllResponse.PlaceDataEnt"
-          + "ry\032R\n\016PlaceDataEntry\022\013\n\003key\030\001 \001(\t\022/\n\005val"
-          + "ue\030\002 \001(\0132 .org.datacommons.proto.SeriesM"
-          + "ap:\0028\001\"<\n\027GetStatSetSeriesRequest\022\016\n\006pla"
-          + "ces\030\001 \003(\t\022\021\n\tstat_vars\030\002 \003(\t\"\262\001\n\030GetStat"
-          + "SetSeriesResponse\022G\n\004data\030\001 \003(\01329.org.da"
-          + "tacommons.proto.GetStatSetSeriesResponse"
-          + ".DataEntry\032M\n\tDataEntry\022\013\n\003key\030\001 \001(\t\022/\n\005"
-          + "value\030\002 \001(\0132 .org.datacommons.proto.Seri"
-          + "esMap:\0028\001b\006proto3"
+      "\n\tapi.proto\022\025org.datacommons.proto\"\231\001\n\014S" +
+      "tatMetadata\022\023\n\013import_name\030\001 \001(\t\022\026\n\016prov" +
+      "enance_url\030\002 \001(\t\022\032\n\022measurement_method\030\003" +
+      " \001(\t\022\032\n\022observation_period\030\004 \001(\t\022\026\n\016scal" +
+      "ing_factor\030\005 \001(\t\022\014\n\004unit\030\006 \001(\t\"\240\001\n\006Serie" +
+      "s\0223\n\003val\030\001 \003(\0132&.org.datacommons.proto.S" +
+      "eries.ValEntry\0225\n\010metadata\030\002 \001(\0132#.org.d" +
+      "atacommons.proto.StatMetadata\032*\n\010ValEntr" +
+      "y\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\001:\0028\001\"\221\001\n\tSe" +
+      "riesMap\0228\n\004data\030\001 \003(\0132*.org.datacommons." +
+      "proto.SeriesMap.DataEntry\032J\n\tDataEntry\022\013" +
+      "\n\003key\030\001 \001(\t\022,\n\005value\030\002 \001(\0132\035.org.datacom" +
+      "mons.proto.Series:\0028\001\"\262\001\n\030GetStatSetSeri" +
+      "esResponse\022G\n\004data\030\001 \003(\01329.org.datacommo" +
+      "ns.proto.GetStatSetSeriesResponse.DataEn" +
+      "try\032M\n\tDataEntry\022\013\n\003key\030\001 \001(\t\022/\n\005value\030\002" +
+      " \001(\0132 .org.datacommons.proto.SeriesMap:\002" +
+      "8\001b\006proto3"
     };
-    descriptor =
-        com.google.protobuf.Descriptors.FileDescriptor.internalBuildGeneratedFileFrom(
-            descriptorData, new com.google.protobuf.Descriptors.FileDescriptor[] {});
+    descriptor = com.google.protobuf.Descriptors.FileDescriptor
+      .internalBuildGeneratedFileFrom(descriptorData,
+        new com.google.protobuf.Descriptors.FileDescriptor[] {
+        });
     internal_static_org_datacommons_proto_StatMetadata_descriptor =
-        getDescriptor().getMessageTypes().get(0);
-    internal_static_org_datacommons_proto_StatMetadata_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_org_datacommons_proto_StatMetadata_descriptor,
-            new java.lang.String[] {
-              "ImportName",
-              "ProvenanceUrl",
-              "MeasurementMethod",
-              "ObservationPeriod",
-              "ScalingFactor",
-              "Unit",
-            });
+      getDescriptor().getMessageTypes().get(0);
+    internal_static_org_datacommons_proto_StatMetadata_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_org_datacommons_proto_StatMetadata_descriptor,
+        new java.lang.String[] { "ImportName", "ProvenanceUrl", "MeasurementMethod", "ObservationPeriod", "ScalingFactor", "Unit", });
     internal_static_org_datacommons_proto_Series_descriptor =
-        getDescriptor().getMessageTypes().get(1);
-    internal_static_org_datacommons_proto_Series_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_org_datacommons_proto_Series_descriptor,
-            new java.lang.String[] {
-              "Val", "Metadata",
-            });
+      getDescriptor().getMessageTypes().get(1);
+    internal_static_org_datacommons_proto_Series_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_org_datacommons_proto_Series_descriptor,
+        new java.lang.String[] { "Val", "Metadata", });
     internal_static_org_datacommons_proto_Series_ValEntry_descriptor =
-        internal_static_org_datacommons_proto_Series_descriptor.getNestedTypes().get(0);
-    internal_static_org_datacommons_proto_Series_ValEntry_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_org_datacommons_proto_Series_ValEntry_descriptor,
-            new java.lang.String[] {
-              "Key", "Value",
-            });
+      internal_static_org_datacommons_proto_Series_descriptor.getNestedTypes().get(0);
+    internal_static_org_datacommons_proto_Series_ValEntry_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_org_datacommons_proto_Series_ValEntry_descriptor,
+        new java.lang.String[] { "Key", "Value", });
     internal_static_org_datacommons_proto_SeriesMap_descriptor =
-        getDescriptor().getMessageTypes().get(2);
-    internal_static_org_datacommons_proto_SeriesMap_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_org_datacommons_proto_SeriesMap_descriptor,
-            new java.lang.String[] {
-              "Data",
-            });
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_org_datacommons_proto_SeriesMap_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_org_datacommons_proto_SeriesMap_descriptor,
+        new java.lang.String[] { "Data", });
     internal_static_org_datacommons_proto_SeriesMap_DataEntry_descriptor =
-        internal_static_org_datacommons_proto_SeriesMap_descriptor.getNestedTypes().get(0);
-    internal_static_org_datacommons_proto_SeriesMap_DataEntry_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_org_datacommons_proto_SeriesMap_DataEntry_descriptor,
-            new java.lang.String[] {
-              "Key", "Value",
-            });
-    internal_static_org_datacommons_proto_GetStatAllResponse_descriptor =
-        getDescriptor().getMessageTypes().get(3);
-    internal_static_org_datacommons_proto_GetStatAllResponse_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_org_datacommons_proto_GetStatAllResponse_descriptor,
-            new java.lang.String[] {
-              "PlaceData",
-            });
-    internal_static_org_datacommons_proto_GetStatAllResponse_PlaceDataEntry_descriptor =
-        internal_static_org_datacommons_proto_GetStatAllResponse_descriptor.getNestedTypes().get(0);
-    internal_static_org_datacommons_proto_GetStatAllResponse_PlaceDataEntry_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_org_datacommons_proto_GetStatAllResponse_PlaceDataEntry_descriptor,
-            new java.lang.String[] {
-              "Key", "Value",
-            });
-    internal_static_org_datacommons_proto_GetStatSetSeriesRequest_descriptor =
-        getDescriptor().getMessageTypes().get(4);
-    internal_static_org_datacommons_proto_GetStatSetSeriesRequest_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_org_datacommons_proto_GetStatSetSeriesRequest_descriptor,
-            new java.lang.String[] {
-              "Places", "StatVars",
-            });
+      internal_static_org_datacommons_proto_SeriesMap_descriptor.getNestedTypes().get(0);
+    internal_static_org_datacommons_proto_SeriesMap_DataEntry_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_org_datacommons_proto_SeriesMap_DataEntry_descriptor,
+        new java.lang.String[] { "Key", "Value", });
     internal_static_org_datacommons_proto_GetStatSetSeriesResponse_descriptor =
-        getDescriptor().getMessageTypes().get(5);
-    internal_static_org_datacommons_proto_GetStatSetSeriesResponse_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_org_datacommons_proto_GetStatSetSeriesResponse_descriptor,
-            new java.lang.String[] {
-              "Data",
-            });
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_org_datacommons_proto_GetStatSetSeriesResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_org_datacommons_proto_GetStatSetSeriesResponse_descriptor,
+        new java.lang.String[] { "Data", });
     internal_static_org_datacommons_proto_GetStatSetSeriesResponse_DataEntry_descriptor =
-        internal_static_org_datacommons_proto_GetStatSetSeriesResponse_descriptor
-            .getNestedTypes()
-            .get(0);
-    internal_static_org_datacommons_proto_GetStatSetSeriesResponse_DataEntry_fieldAccessorTable =
-        new com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-            internal_static_org_datacommons_proto_GetStatSetSeriesResponse_DataEntry_descriptor,
-            new java.lang.String[] {
-              "Key", "Value",
-            });
+      internal_static_org_datacommons_proto_GetStatSetSeriesResponse_descriptor.getNestedTypes().get(0);
+    internal_static_org_datacommons_proto_GetStatSetSeriesResponse_DataEntry_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_org_datacommons_proto_GetStatSetSeriesResponse_DataEntry_descriptor,
+        new java.lang.String[] { "Key", "Value", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

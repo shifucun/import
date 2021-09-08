@@ -40,7 +40,7 @@ public class Observation {
   private String observationDate;
 
   @Column(name = "VALUE")
-  private String value;
+  private Double value;
 
   @Column(name = "VARIABLE_MEASURED")
   private String variableMeasured;
@@ -69,11 +69,11 @@ public class Observation {
     this.observationDate = date;
   }
 
-  public String getValue() {
+  public Double getValue() {
     return value;
   }
 
-  public void setValue(String value) {
+  public void setValue(Double value) {
     this.value = value;
   }
 
